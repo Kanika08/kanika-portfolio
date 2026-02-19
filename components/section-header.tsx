@@ -20,7 +20,7 @@ export function SectionHeader({
   return (
     <div className={`flex flex-col gap-3 ${alignment}`}>
       {eyebrow && (
-        <p className="text-[11px] md:text-xs uppercase tracking-[0.22em] text-neutral-500">
+        <p className="text-[11px] md:text-xs uppercase tracking-[0.22em] text-neutral-500 dark:text-neutral-400">
           {eyebrow}
         </p>
       )}
@@ -28,7 +28,7 @@ export function SectionHeader({
         {title}
       </HeadingTag>
       {description && (
-        <p className="max-w-2xl text-sm md:text-base text-neutral-600 leading-relaxed">
+        <p className="max-w-2xl text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
           {description}
         </p>
       )}
