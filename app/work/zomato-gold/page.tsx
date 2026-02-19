@@ -10,9 +10,9 @@ export default function ZomatoGold() {
         as="h1"
       />
 
-      <div className="mt-10 space-y-12 md:space-y-14 text-sm md:text-base text-neutral-600 leading-relaxed">
+      <div className="mt-10 space-y-12 md:space-y-14 text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
         <section>
-          <h2 className="mb-3 text-lg md:text-xl font-semibold text-neutral-900">
+          <h2 className="mb-3 text-lg md:text-xl font-semibold text-neutral-900 dark:text-neutral-100">
             The problem
           </h2>
           <p>
@@ -23,7 +23,7 @@ export default function ZomatoGold() {
         </section>
 
         <section>
-          <h2 className="mb-3 text-lg md:text-xl font-semibold text-neutral-900">
+          <h2 className="mb-3 text-lg md:text-xl font-semibold text-neutral-900 dark:text-neutral-100">
             My role
           </h2>
           <p>
@@ -35,7 +35,7 @@ export default function ZomatoGold() {
         </section>
 
         <section>
-          <h2 className="mb-3 text-lg md:text-xl font-semibold text-neutral-900">
+          <h2 className="mb-3 text-lg md:text-xl font-semibold text-neutral-900 dark:text-neutral-100">
             Design challenges
           </h2>
           <p>
@@ -47,7 +47,7 @@ export default function ZomatoGold() {
         </section>
 
         <section>
-          <h2 className="mb-3 text-lg md:text-xl font-semibold text-neutral-900">
+          <h2 className="mb-3 text-lg md:text-xl font-semibold text-neutral-900 dark:text-neutral-100">
             Outcome &amp; learnings
           </h2>
           <p>

@@ -50,12 +50,12 @@ export default function AboutPage() {
           as="h2"
         />
 
-        <div className="space-y-5 text-sm md:text-base text-neutral-600 leading-relaxed">
+        <div className="space-y-5 text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
           <div className="flex flex-col gap-1">
-            <p className="text-xs uppercase tracking-[0.22em] text-neutral-500">
+            <p className="text-xs uppercase tracking-[0.22em] text-neutral-500 dark:text-neutral-400">
               Prodigy Education
             </p>
-            <p className="font-medium text-neutral-900">
+            <p className="font-medium text-neutral-900 dark:text-neutral-100">
               Designing subscription and parent experiences
             </p>
             <p>
@@ -66,10 +66,10 @@ export default function AboutPage() {
           </div>
 
           <div className="flex flex-col gap-1">
-            <p className="text-xs uppercase tracking-[0.22em] text-neutral-500">
+            <p className="text-xs uppercase tracking-[0.22em] text-neutral-500 dark:text-neutral-400">
               Zomato
             </p>
-            <p className="font-medium text-neutral-900">
+            <p className="font-medium text-neutral-900 dark:text-neutral-100">
               Building marketplace and subscription systems
             </p>
             <p>
@@ -90,9 +90,9 @@ export default function AboutPage() {
           as="h2"
         />
 
-        <div className="grid gap-6 text-sm md:text-base text-neutral-600 leading-relaxed md:grid-cols-2">
+        <div className="grid gap-6 text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed md:grid-cols-2">
           <div className="space-y-3">
-            <p className="font-medium text-neutral-900">How I think</p>
+            <p className="font-medium text-neutral-900 dark:text-neutral-100">How I think</p>
             <p>
               I start from constraints and incentives: who needs to win, what
               needs to be protected, and where the system is likely to break.
@@ -102,7 +102,7 @@ export default function AboutPage() {
           </div>
 
           <div className="space-y-3">
-            <p className="font-medium text-neutral-900">
+            <p className="font-medium text-neutral-900 dark:text-neutral-100">
               How I work with teams
             </p>
             <p>
@@ -116,8 +116,8 @@ export default function AboutPage() {
       </div>
 
       {/* 4. Personal note */}
-      <div className="space-y-4 border-t border-dashed border-neutral-200 pt-8 text-sm md:text-base text-neutral-600 leading-relaxed">
-        <p className="font-medium text-neutral-900">A more human note</p>
+      <div className="space-y-4 border-t border-dashed border-neutral-200 dark:border-neutral-800 pt-8 text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+        <p className="font-medium text-neutral-900 dark:text-neutral-100">A more human note</p>
         <p>
           Outside of product work, I’m often collecting references—from service
           design, architecture, and writing—that influence how I think about
