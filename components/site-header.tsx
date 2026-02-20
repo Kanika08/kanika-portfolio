@@ -47,11 +47,11 @@ export function SiteHeader() {
     <header className="sticky top-0 z-30 border-b border-neutral-200/80 dark:border-neutral-800/80 bg-neutral-50/80 dark:bg-neutral-950/80 backdrop-blur-md">
       <div className="max-w-6xl mx-auto px-6 md:px-10 py-4 md:py-5 flex items-center justify-between gap-6">
         <Link href="/" className="flex items-center gap-3">
-          <div className="h-8 w-8 rounded-full bg-neutral-900 dark:bg-neutral-100 text-neutral-50 dark:text-neutral-900 flex items-center justify-center text-xs font-semibold">
+          <div className="h-8 w-8 rounded-full bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 flex items-center justify-center text-xs font-semibold">
             KM
           </div>
           <div className="flex flex-col leading-tight">
-            <span className="text-sm md:text-base font-medium tracking-tight">
+            <span className="text-sm md:text-base font-medium tracking-tight text-primary">
               Kanika Mudhar
             </span>
             <span className="text-[11px] uppercase tracking-[0.22em] text-neutral-500 dark:text-neutral-400">

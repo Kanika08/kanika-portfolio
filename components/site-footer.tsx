@@ -1,81 +1,63 @@
+import { HiMail } from "react-icons/hi";
+import { FaLinkedinIn, FaMediumM } from "react-icons/fa";
+
 export function SiteFooter() {
   return (
     <footer className="border-t border-neutral-200 dark:border-neutral-800 mt-20 md:mt-28">
       <div className="max-w-6xl mx-auto px-6 md:px-10 py-14 md:py-18">
+
+        {/* Top section */}
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-10">
-          
+
           {/* Left side */}
-          <div className="max-w-md space-y-3">
+          <div className="max-w-md">
             <h3 className="text-lg md:text-xl font-semibold tracking-tight">
               Building thoughtful, scalable products.
             </h3>
           </div>
 
           {/* Right side */}
-          <div className="flex flex-col items-start gap-4 text-sm text-neutral-600 dark:text-neutral-400">
-            <div className="flex gap-5">
-              <a
-                href="mailto:kanika.vasudeva@gmail.com"
-                className="flex items-center gap-2 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
-              >
-                <svg
-                  className="h-4 w-4 text-neutral-500 dark:text-neutral-400"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.5}
-                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  />
-                </svg>
-                Email
-              </a>
+          <div className="flex items-center gap-6 text-sm text-neutral-600 dark:text-neutral-400">
 
-              <a
-                href="https://www.linkedin.com/in/kanikamudhar/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
-              >
-                <svg
-                  className="h-4 w-4 text-neutral-500 dark:text-neutral-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                </svg>
-                LinkedIn
-              </a>
+            {/* Email */}
+            <a
+              href="mailto:kanika.vasudeva@gmail.com"
+              className="flex items-center gap-2 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
+            >
+             <HiMail className="h-4 w-4 opacity-70" />
 
-              <a
-                href="https://medium.com/@kanikavasudeva"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
-              >
-                <svg
-                  className="h-4 w-4 text-neutral-500 dark:text-neutral-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" />
-                </svg>
-                Medium
-              </a>
-            </div>
+              Email
+            </a>
+
+            {/* LinkedIn */}
+            <a
+              href="https://www.linkedin.com/in/kanikamudhar/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
+            >
+              <FaLinkedinIn className="h-4 w-4 opacity-70" />
+              LinkedIn
+            </a>
+
+            {/* Medium */}
+            <a
+              href="https://medium.com/@kanikavasudeva"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
+            >
+              <FaMediumM className="h-4 w-4 opacity-70" />
+              Medium
+            </a>
+
           </div>
 
         </div>
 
-        {/* Bottom section */}
-        <div className="mt-10 text-xs md:text-sm text-neutral-500 dark:text-neutral-400 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-          <span>© {new Date().getFullYear()} Kanika Mudhar</span>
-          <span className="text-neutral-400 dark:text-neutral-500">
-            Built with Next.js &amp; Tailwind CSS
-          </span>
+        {/* Bottom */}
+        <div className="mt-4 text-xs md:text-sm text-neutral-500 dark:text-neutral-400">
+          © {new Date().getFullYear()} Kanika Mudhar
         </div>
 
       </div>

@@ -1,62 +1,82 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 
 type CaseStudyCardProps = {
   href: string;
   product: string;
-  focus: string;
   title: string;
   summary: string;
   tags: string[];
+  coverImage: string;
+  logo: ReactNode;
+  readTime: string;
 };
 
 export function CaseStudyCard({
   href,
   product,
-  focus,
   title,
   summary,
   tags,
+  coverImage,
+  logo,
+  readTime,
 }: CaseStudyCardProps) {
   return (
-    <Link
-      href={href}
-      className="group flex flex-col justify-between rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 p-6 md:p-7 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-neutral-300 dark:hover:border-neutral-700 hover:shadow-[0_24px_60px_rgba(15,23,42,0.12)] dark:hover:shadow-[0_24px_60px_rgba(0,0,0,0.3)]"
-    >
-      <div>
-        <div className="mb-6 flex items-center justify-between text-xs text-neutral-500 dark:text-neutral-400">
-          <span className="font-medium">{product}</span>
-          <span className="rounded-full border border-neutral-200 dark:border-neutral-800 px-3 py-1 text-[11px] uppercase tracking-[0.18em]">
-            {focus}
-          </span>
-        </div>
+    <Link href={href} className="group block">
+      <div className="grid md:grid-cols-2 rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden bg-white dark:bg-neutral-900 hover:shadow-lg hover:border-neutral-300 dark:hover:border-neutral-700 transition">
+        {/* Left: Content */}
+        <div className="p-6 md:p-8 flex flex-col justify-center">
+          {/* Company row */}
+          <div className="flex items-center gap-3 mb-4">
+            <div className="h-10 w-10 flex items-center justify-center rounded-md bg-neutral-100 dark:bg-neutral-800">
+              {logo}
+            </div>
 
-        <div className="mb-5 flex flex-wrap gap-2">
-          {tags.map((tag) => (
-            <span
-              key={tag}
-              className="rounded-full border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-800 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400"
-            >
-              {tag}
+            <span className="text-sm font-medium text-neutral-900 dark:text-neutral-100">
+              {product}
             </span>
-          ))}
+          </div>
+
+          {/* Title */}
+          <h3 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100 mb-3">
+            {title}
+          </h3>
+
+          {/* Summary */}
+          <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed mb-4">
+            {summary}
+          </p>
+
+          {/* Tags */}
+          <div className="flex flex-wrap gap-2 mb-6">
+            {tags.map((tag) => (
+              <span
+                key={tag}
+                className="text-xs px-2 py-1 rounded-md bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+
+          {/* Bottom row */}
+          <div className="flex items-center justify-between">
+            <span className="font-medium text-neutral-900 dark:text-neutral-100 group-hover:underline">
+              View case study →
+            </span>
+            <span className="text-xs text-neutral-500">{readTime}</span>
+          </div>
         </div>
 
-        <h3 className="mb-3 text-lg md:text-xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
-          {title}
-        </h3>
-        <p className="text-sm md:text-[15px] leading-relaxed text-neutral-600 dark:text-neutral-400">
-          {summary}
-        </p>
-      </div>
-
-      <div className="mt-6 flex items-center justify-between text-sm font-medium text-neutral-900 dark:text-neutral-100">
-        <span className="inline-flex items-center gap-1">
-          View case study
-          <span className="transition-transform group-hover:translate-x-0.5">
-            →
-          </span>
-        </span>
-        <span className="text-xs text-neutral-400 dark:text-neutral-500">~5 min read</span>
+        {/* Right: Cover image */}
+        <div className="relative aspect-[4/3] md:aspect-auto md:h-full">
+          <img
+            src={coverImage}
+            alt={title}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        </div>
       </div>
     </Link>
   );

@@ -11,16 +11,22 @@
 :root {
   --background: 250 250 250;
   --foreground: 10 10 10;
+  --foreground-primary: 38 38 38; /* #262626 premium charcoal */
 }
 
 .dark {
   --background: 10 10 10;
   --foreground: 250 250 250;
+  --foreground-primary: 245 245 245; /* softer white for dark mode */
 }
 
 body {
   background: rgb(var(--background));
   color: rgb(var(--foreground));
+}
+
+.text-primary {
+  color: rgb(var(--foreground-primary));
 }
 
 html {
