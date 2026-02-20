@@ -12,9 +12,7 @@ export default function OnePageCheckoutCaseStudy() {
             One-page checkout experiment (V1 → V2)
           </h1>
           <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
-            Designing and running a high‑impact checkout experiment to simplify
-            subscription flows, increase conversion, and build a repeatable
-            experimentation pattern for the growth team.
+            Designing and running a high‑impact membership checkout experiment and turning a failed test into a growth playbook
           </p>
         </header>
 
@@ -33,7 +31,7 @@ export default function OnePageCheckoutCaseStudy() {
               Timeline
             </dt>
             <dd className="mt-1 text-neutral-900 dark:text-neutral-100">
-              ~8 weeks, from framing to rollout
+              ~12 weeks (Oct - Dec 2025)
             </dd>
           </div>
           <div>
@@ -41,7 +39,7 @@ export default function OnePageCheckoutCaseStudy() {
               Area
             </dt>
             <dd className="mt-1 text-neutral-900 dark:text-neutral-100">
-              Growth · Subscription · Experimentation
+              Growth · Membership · Experimentation
             </dd>
           </div>
         </dl>
@@ -53,11 +51,17 @@ export default function OnePageCheckoutCaseStudy() {
           Overview
         </h2>
         <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
-          Prodigy’s subscription checkout had grown organically over time:
-          multiple steps, legacy messaging, and branching paths for offers and
-          promotions. We saw early signs of friction in both completion rate and
-          support tickets. The opportunity was to simplify the experience while
-          preserving the pricing and offer logic the business depended on.
+        Leadership believed our multi-step membership checkout was causing friction and hurting conversion.
+
+My initial recommendation was to streamline the flow while preserving plan clarity,
+separating selection from payment to maintain confidence. However, stakeholders chose
+to test a competitor-inspired single-page checkout.
+
+We ran a fast experiment. The result: –14.9% conversion.
+
+Funnel data and session replays confirmed the issue - collapsing steps removed reassurance
+and price control at a critical decision moment. Those insights informed V2, aligned with my original direction,
+and strengthened our experimentation approach moving forward.
         </p>
         <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
           This case study walks through how we framed the problem, designed a
@@ -72,27 +76,65 @@ export default function OnePageCheckoutCaseStudy() {
           Problem
         </h2>
         <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
-          Despite healthy top‑of‑funnel traffic, subscription conversion on the
-          existing multi‑step checkout was plateauing. Funnel analysis surfaced
-          two main issues:
+        Prodigy’s checkout relied on a multi-step flow that required parents to navigate several pages before completing a membership purchase.
+        Funnel data showed significant drop-offs at each step, particularly around plan selection and payment. From the membership page traffic:
         </p>
         <ul className="list-disc pl-5 space-y-2 text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
-          <li>Drop‑off between pricing selection and payment entry.</li>
+          <li>123,844 users landed</li>
           <li>
-            Confusion around discounts and renewals, reflected in support
-            tickets and refund requests.
+          Only ~9.4% progressed to add payment
           </li>
         </ul>
         <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
-          The team’s intuition was that the number of steps, combined with
-          fragmented messaging, made the experience feel heavier than it needed
-          to be at a moment where trust and clarity are critical.
+        The team’s intuition:
+
+Too many steps = too much friction.
+
+But friction at checkout isn’t always bad, sometimes it builds confidence.
         </p>
 
         <div className="my-8 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 aspect-[16/10] flex items-center justify-center text-sm text-neutral-400">
           Existing multi‑step checkout flow – design concept placeholder
         </div>
       </section>
+
+      {/* My Role & Approach */}
+<section className="space-y-4">
+  <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+    My Role & Approach
+  </h2>
+
+  <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
+    The brief was intentionally open:
+  </p>
+
+  <blockquote className="border-l-2 border-neutral-300 dark:border-neutral-700 pl-4 italic text-sm md:text-base text-neutral-700 dark:text-neutral-300 max-w-2xl">
+    “Reduce checkout friction and improve conversion.”
+  </blockquote>
+
+  <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
+    Instead of jumping into UI, I focused on understanding where friction was occurring and what was driving it.
+  </p>
+
+  <ul className="list-disc pl-5 space-y-2 text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
+    <li>Analyzed funnel drop-offs</li>
+    <li>Reviewed session replays</li>
+    <li>
+      Conducted secondary research on:
+      <ul className="list-disc pl-5 mt-2 space-y-1">
+        <li>Checkout layouts</li>
+        <li>Billing term toggles</li>
+        <li>Social proof placement</li>
+        <li>Plan comparison patterns</li>
+      </ul>
+    </li>
+    <li>Developed multiple low-fidelity concepts based on different assumptions</li>
+  </ul>
+
+  <p className="text-sm md:text-base text-neutral-900 dark:text-neutral-100 leading-relaxed max-w-2xl font-medium">
+    The goal was to test which friction actually mattered — not just remove steps blindly.
+  </p>
+</section>
 
       {/* Hypothesis */}
       <section className="space-y-4">
