@@ -62,7 +62,7 @@ We ran a fast experiment. The result: –14.9% conversion.
 </p>
         
         <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
-        Funnel data and session replays confirmed the issue - collapsing steps removed reassurance
+        Funnel data and session replays confirmed the issue that collapsing steps removed reassurance
 and price control at a critical decision moment. Those insights informed V2, aligned with my original direction,
 and strengthened our experimentation approach moving forward.
         </p>
