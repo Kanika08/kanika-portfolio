@@ -1,4 +1,4 @@
-import { CaseStudyCard } from "@/components/case-study-card";
+import Link from "next/link";
 
 const caseStudies = [
   {
@@ -46,10 +46,13 @@ const caseStudies = [
 export default function WorkPage() {
   return (
     <section className="max-w-4xl mx-auto pt-4 md:pt-6 pb-10 md:pb-12">
+
+      {/* Header */}
       <div>
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
           Product case studies
         </h1>
+
         <p className="mt-3 max-w-2xl text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
           Systems-focused work across subscriptions, experimentation, and design
           foundations—focused on clarity, measurable outcomes, and products that
@@ -57,20 +60,80 @@ export default function WorkPage() {
         </p>
       </div>
 
-      <div className="flex flex-col gap-20 md:gap-28 mt-10 md:mt-12">
+      {/* Case study list */}
+      <div className="flex flex-col gap-20 md:gap-24 mt-10 md:mt-12">
+
         {caseStudies.map((study) => (
-          <CaseStudyCard
-            key={study.href}
-            href={study.href}
-            product={study.product}
-            title={study.title}
-            summary={study.summary}
-            tags={study.tags}
-            readTime={study.readTime}
-            imageBg={study.imageBg}
-          />
+          <Link key={study.href} href={study.href} className="group">
+
+            <article className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+
+              {/* Image container */}
+              <div
+                className={`
+                  aspect-[4/3]
+                  rounded-xl
+                  ${study.imageBg}
+                  flex items-center justify-center
+                  transition
+                  group-hover:scale-[1.01]
+                `}
+              >
+                {/* placeholder — you will add image later */}
+              </div>
+
+              {/* Text content */}
+              <div>
+
+                {/* Product tag */}
+                <div className="text-sm text-neutral-500 dark:text-neutral-400 mb-2">
+                  {study.product}
+                </div>
+
+                {/* Title */}
+                <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+                  {study.title}
+                </h2>
+
+                {/* Summary */}
+                <p className="mt-3 text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+                  {study.summary}
+                </p>
+
+                {/* Tags */}
+                <div className="flex flex-wrap gap-2 mt-4">
+                  {study.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="text-xs px-2.5 py-1 rounded-md bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-300"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Footer row */}
+                <div className="flex items-center justify-between mt-6">
+
+                  <span className="text-sm font-medium text-neutral-900 dark:text-neutral-100 group-hover:underline">
+                    View case study →
+                  </span>
+
+                  <span className="text-xs text-neutral-500 dark:text-neutral-400">
+                    {study.readTime}
+                  </span>
+
+                </div>
+
+              </div>
+
+            </article>
+
+          </Link>
         ))}
+
       </div>
+
     </section>
   );
 }
