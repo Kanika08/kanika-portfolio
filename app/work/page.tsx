@@ -2,7 +2,7 @@ import { CaseStudyCard } from "@/components/case-study-card";
 
 export default function WorkPage() {
   return (
-    <section className="max-w-4xl mx-auto pt-6 md:pt-10 pb-10 md:pb-12">
+    <section className="max-w-4xl mx-auto pt-4 md:pt-6 pb-10 md:pb-12">
       <div>
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
           Product case studies
