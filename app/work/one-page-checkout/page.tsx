@@ -91,9 +91,37 @@ Too many steps = too much friction.
 But friction at checkout isn’t always bad, sometimes it builds confidence.
         </p>
 
-        <div className="my-8 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 aspect-[16/10] flex items-center justify-center text-sm text-neutral-400">
-          Existing multi‑step checkout flow – design concept placeholder
-        </div>
+        <div className="my-12 flex justify-center">
+  <div className="relative w-full max-w-4xl">
+
+    {/* MacBook frame */}
+    <div className="rounded-2xl bg-neutral-900 p-3 shadow-2xl border border-neutral-800">
+      
+      {/* Camera notch */}
+      <div className="flex justify-center mb-2">
+        <div className="w-16 h-1.5 bg-neutral-700 rounded-full"></div>
+      </div>
+
+      {/* Screen */}
+      <div className="rounded-lg overflow-hidden bg-black">
+        <video
+          className="w-full h-auto"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source src="/videos/current-checkout-flow.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      {/* Bottom base */}
+      <div className="h-3 bg-neutral-800 rounded-b-xl mt-2"></div>
+
+    </div>
+
+  </div>
+</div>
       </section>
 
       {/* My Role & Approach */}
