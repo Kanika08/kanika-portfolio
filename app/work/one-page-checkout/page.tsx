@@ -3,12 +3,12 @@ export default function OnePageCheckoutCaseStudy() {
     <article className="max-w-3xl mx-auto pt-8 md:pt-10 pb-16 md:pb-24 space-y-12 md:space-y-14">
       {/* Hero */}
       <section className="space-y-6">
-        <div className="text-xs uppercase tracking-[0.22em] text-neutral-500 dark:text-neutral-400">
+        <span className="text-xs uppercase tracking-[0.22em] text-neutral-500 dark:text-neutral-400">
           Prodigy · Case study
-        </div>
+        </span>
 
         <header className="space-y-4">
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+          <h1 className="text-3xl md:text-4xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
             One-page checkout experiment (V1 → V2)
           </h1>
           <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
@@ -72,24 +72,26 @@ export default function OnePageCheckoutCaseStudy() {
         </h2>
         <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
           Prodigy&apos;s checkout relied on a multi-step flow requiring parents
-          to navigate multiple screens before completing purchase.
+          to navigate multiple screens before completing purchase. Funnel data
+          showed significant drop-offs at each step, particularly around buy now
+          and payment step.
         </p>
-        <ul className="list-disc pl-5 space-y-2 text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
+        <ul className="list-disc pl-5 space-y-2 text-sm md:text-base text-neutral-900 dark:text-neutral-100 leading-relaxed max-w-2xl">
           <li>123,844 users landed</li>
           <li>Only ~9.4% progressed to add payment</li>
         </ul>
         <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
-          Too many steps can increase friction — but removing structure too
+          Too many steps can increase friction, but removing structure too
           aggressively can also reduce confidence.
         </p>
       </section>
 
-      {/* Video frame */}
-      <section className="space-y-4">
+      {/* Checkout flow video */}
+      <section className="space-y-3">
         <div className="flex justify-center">
           <div className="w-full max-w-2xl">
-            <div className="rounded-[28px] border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-900 p-2 shadow-sm">
-              <div className="rounded-[20px] overflow-hidden bg-black">
+            <div className="rounded-[24px] border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-900 p-2">
+              <div className="rounded-[16px] overflow-hidden bg-black">
                 <video
                   className="w-full h-auto block"
                   autoPlay
@@ -105,7 +107,7 @@ export default function OnePageCheckoutCaseStudy() {
                 </video>
               </div>
             </div>
-            <p className="mt-3 text-xs md:text-sm text-neutral-500 dark:text-neutral-400">
+            <p className="mt-3 text-xs text-neutral-500 dark:text-neutral-400">
               Current checkout flow · 7 steps
             </p>
           </div>
@@ -113,17 +115,17 @@ export default function OnePageCheckoutCaseStudy() {
       </section>
 
       {/* Flowchart image */}
-      <section className="space-y-4">
+      <section className="space-y-3">
         <div className="flex justify-center">
-          <div className="w-full max-w-3xl">
+          <div className="w-full max-w-2xl">
             <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 overflow-hidden">
               <img
                 src="/images/checkout-flowchart.png"
                 alt="Checkout flow diagram showing 7 steps"
-                className="w-full h-auto"
+                className="w-full h-auto block"
               />
             </div>
-            <p className="mt-3 text-xs md:text-sm text-neutral-500 dark:text-neutral-400">
+            <p className="mt-3 text-xs text-neutral-500 dark:text-neutral-400">
               Checkout flow structure showing step-by-step progression
             </p>
           </div>
@@ -142,7 +144,7 @@ export default function OnePageCheckoutCaseStudy() {
           &quot;Reduce checkout friction and improve conversion.&quot;
         </blockquote>
         <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
-          Instead of jumping into UI, I focused on diagnosing friction.
+          Instead of jumping into solutions, I focused on diagnosing friction.
         </p>
         <ul className="list-disc pl-5 space-y-2 text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
           <li>Analyzed funnel drop-offs</li>
@@ -153,6 +155,129 @@ export default function OnePageCheckoutCaseStudy() {
         <p className="text-sm md:text-base font-medium text-neutral-900 dark:text-neutral-100 leading-relaxed max-w-2xl">
           The goal was to test which friction actually mattered.
         </p>
+      </section>
+
+      {/* Concept exploration */}
+      <section className="space-y-4">
+        <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+          Concept exploration
+        </h2>
+        <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
+          I explored three structural directions to understand how checkout
+          friction and confidence interact.
+        </p>
+
+        <div className="border-t border-neutral-200 dark:border-neutral-800">
+          {/* Concept 1 */}
+          <details
+            className="group border-b border-neutral-200 dark:border-neutral-800"
+            open
+          >
+            <summary className="flex items-center justify-between cursor-pointer py-5 list-none [&::-webkit-details-marker]:hidden">
+              <span className="flex flex-col gap-0.5">
+                <span className="text-xs text-neutral-500 dark:text-neutral-400">
+                  Concept 1
+                </span>
+                <span className="text-base font-medium text-neutral-900 dark:text-neutral-100">
+                  Reduce decision load at checkout
+                </span>
+              </span>
+              <svg
+                className="w-4 h-4 flex-shrink-0 text-neutral-400 transition-transform duration-200 group-open:rotate-180"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.24 4.5a.75.75 0 01-1.08 0l-4.24-4.5a.75.75 0 01.02-1.06z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </summary>
+            <div className="pb-6 pt-2 space-y-4">
+              <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 max-w-2xl">
+                Locks plan and billing earlier to simplify the final decision
+                moment.
+              </p>
+              <img
+                src="/images/concept-1.png"
+                alt="Checkout concept 1 — reduced decision load"
+                className="w-full h-auto rounded-lg border border-neutral-200 dark:border-neutral-800"
+              />
+            </div>
+          </details>
+
+          {/* Concept 2 */}
+          <details className="group border-b border-neutral-200 dark:border-neutral-800">
+            <summary className="flex items-center justify-between cursor-pointer py-5 list-none [&::-webkit-details-marker]:hidden">
+              <span className="flex flex-col gap-0.5">
+                <span className="text-xs text-neutral-500 dark:text-neutral-400">
+                  Concept 2
+                </span>
+                <span className="text-base font-medium text-neutral-900 dark:text-neutral-100">
+                  Remove review step to accelerate completion
+                </span>
+              </span>
+              <svg
+                className="w-4 h-4 flex-shrink-0 text-neutral-400 transition-transform duration-200 group-open:rotate-180"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.24 4.5a.75.75 0 01-1.08 0l-4.24-4.5a.75.75 0 01.02-1.06z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </summary>
+            <div className="pb-6 pt-2 space-y-3">
+              <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 max-w-2xl">
+                Assumes users already understand their purchase and the review
+                step adds unnecessary friction.
+              </p>
+              <ul className="list-disc pl-5 text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl space-y-1">
+                <li>Remove explicit review page</li>
+                <li>Calculate totals automatically</li>
+                <li>Move directly from payment to confirmation</li>
+              </ul>
+            </div>
+          </details>
+
+          {/* Concept 3 */}
+          <details className="group border-b border-neutral-200 dark:border-neutral-800">
+            <summary className="flex items-center justify-between cursor-pointer py-5 list-none [&::-webkit-details-marker]:hidden">
+              <span className="flex flex-col gap-0.5">
+                <span className="text-xs text-neutral-500 dark:text-neutral-400">
+                  Concept 3
+                </span>
+                <span className="text-base font-medium text-neutral-900 dark:text-neutral-100">
+                  Balance speed with reassurance signals
+                </span>
+              </span>
+              <svg
+                className="w-4 h-4 flex-shrink-0 text-neutral-400 transition-transform duration-200 group-open:rotate-180"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.24 4.5a.75.75 0 01-1.08 0l-4.24-4.5a.75.75 0 01.02-1.06z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </summary>
+            <div className="pb-6 pt-2 space-y-3">
+              <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 max-w-2xl">
+                Combines speed improvements with confidence-building structure.
+              </p>
+              <ul className="list-disc pl-5 text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl space-y-1">
+                <li>Lock selections earlier</li>
+                <li>Keep pricing context visible</li>
+                <li>Preserve reassurance before payment</li>
+              </ul>
+            </div>
+          </details>
+        </div>
       </section>
 
       {/* Hypothesis */}
@@ -177,7 +302,7 @@ export default function OnePageCheckoutCaseStudy() {
         </div>
       </section>
 
-      {/* Impact */}
+      {/* Impact & Takeaway */}
       <section className="space-y-4">
         <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
           Impact &amp; Takeaway
