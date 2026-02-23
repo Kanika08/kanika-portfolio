@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function HomePage() {
   return (
-    <section className="max-w-4xl py-10 md:py-12">
-      <h1 className="mb-8 text-4xl md:text-6xl lg:text-7xl font-semibold leading-tight tracking-tight text-primary">
+    <section className="max-w-4xl">
+      <h1 className="mb-8 text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight tracking-tight text-primary">
         I design systems behind products people rely on every day.
       </h1>
 

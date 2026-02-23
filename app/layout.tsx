@@ -32,7 +32,7 @@ export default function RootLayout({
         <div className="min-h-screen flex flex-col">
           <SiteHeader />
 
-          <main className="flex-1 pt-20 md:pt-28">
+          <main className="flex-1 pt-16 md:pt-20 pb-24">
             <div className="max-w-6xl mx-auto px-6 md:px-10">
               {children}
             </div>

@@ -1,14 +1,41 @@
 import Link from "next/link";
+const tagStyles: Record<string, string> = {
+  // Growth / Experiment
+  "Experimentation": "bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300",
+  "Growth design": "bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300",
+  "Growth systems": "bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300",
 
+  // Subscription / Marketplace
+  "Subscription": "bg-purple-50 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300",
+  "Membership": "bg-purple-50 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300",
+  "Marketplace": "bg-purple-50 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300",
+
+  // Systems / Design foundations
+  "Systems thinking": "bg-emerald-50 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300",
+  "Design system": "bg-emerald-50 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300",
+  "Scale": "bg-emerald-50 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300",
+  "Cross-functional": "bg-emerald-50 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300",
+
+  // Engagement / Info
+  "Engagement": "bg-amber-50 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300",
+  "Information design": "bg-amber-50 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300",
+};
 const caseStudies = [
   {
     href: "/work/one-page-checkout",
     product: "Prodigy",
-    title: "One-page checkout experiment (V1 → V2)",
+    title: (
+      <>
+        One-page checkout experiment
+        <span className="block mt-1">
+          (V1 → V2)
+        </span>
+      </>
+    ),
     summary:
-      "Redesigned the subscription checkout flow through structured experimentation—improving conversion while documenting failures as reusable learnings for the growth team.",
-    tags: ["Experimentation", "Subscription", "Growth design"],
-    readTime: "4 min read",
+      "Redesigned the membership checkout flow through structured experimentation. Improving conversion while documenting failures as reusable learnings for the growth team.",
+    tags: ["Experimentation", "Membership", "Growth design"],
+    readTime: "8 min read",
     imageBg: "bg-[#E6F0FF] dark:bg-neutral-800",
   },
   {
@@ -45,7 +72,7 @@ const caseStudies = [
 
 export default function WorkPage() {
   return (
-    <section className="max-w-4xl mx-auto pt-4 md:pt-6 pb-10 md:pb-12">
+    <section className="max-w-4xl mx-auto pb-10 md:pb-12">
 
       {/* Header */}
       <div>
@@ -105,7 +132,10 @@ export default function WorkPage() {
                   {study.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="text-xs px-2.5 py-1 rounded-md bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-300"
+                      className={`
+                        text-xs px-2.5 py-1 rounded-md
+                        ${tagStyles[tag] || "bg-neutral-100 text-neutral-600 dark:bg-neutral-800 dark:text-neutral-300"}
+                      `}
                     >
                       {tag}
                     </span>
