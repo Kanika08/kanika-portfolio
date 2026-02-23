@@ -458,35 +458,42 @@ export default function OnePageCheckoutCaseStudy() {
           </div>
         </div>
 
-        {/* Experiment V1 image */}
-        <figure className="space-y-3">
-          <a
-            href="https://checkout-experiment-v1.vercel.app/prototype"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group block rounded-xl border border-neutral-200 dark:border-neutral-800 overflow-hidden transition hover:shadow-lg"
-          >
-            <img
-              src="/images/experiment-v1.png"
-              alt="Checkout Experiment V1: Embedded one-page checkout prototype"
-              className="w-full h-auto block transition group-hover:scale-[1.01]"
-            />
-          </a>
-          <figcaption className="flex items-center justify-between text-xs text-neutral-500 dark:text-neutral-400">
-            <span>
-              Checkout Experiment V1: Embedded one-page checkout prototype
-            </span>
-            <a
-              href="https://checkout-experiment-v1.vercel.app/prototype"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline underline-offset-4 hover:text-neutral-700 dark:hover:text-neutral-300"
-            >
-              View Live &rarr;
-            </a>
-          </figcaption>
-        </figure>
       </section>
+
+      {/* Checkout Experiment V1 */}
+      <section className="space-y-6">
+        <h3 className="text-lg font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+          Checkout Experiment V1
+        </h3>
+
+        <p className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
+          A high-fidelity prototype demonstrating embedded one-page checkout on
+          the membership landing page, including simulated real-time tax
+          calculation and purchase confirmation state.
+        </p>
+
+        <div className="mx-auto max-w-5xl">
+  <div className="rounded-t-2xl bg-[#1a1a1a] p-2 pb-4 shadow-2xl shadow-black/20">
+    {/* Camera notch */}
+    <div className="mx-auto mb-2 h-1 w-12 rounded-full bg-[#2a2a2a]" />
+
+    {/* Screen */}
+    <div className="overflow-hidden rounded-lg bg-black">
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="w-full h-auto block"
+      >
+        <source src="/videos/checkout-prototype.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+
+  {/* Base */}
+  <div className="mx-auto h-2 w-[110%] rounded-b-xl bg-gradient-to-b from-[#d1d1d1] to-[#bdbdbd] shadow-md" />
+</div>
 
       {/* Results */}
       <section className="space-y-4">
