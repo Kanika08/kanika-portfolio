@@ -460,15 +460,30 @@ export default function OnePageCheckoutCaseStudy() {
 
         {/* Experiment V1 image */}
         <figure className="space-y-3">
-          <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 overflow-hidden">
+          <a
+            href="https://checkout-experiment-v1.vercel.app/prototype"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group block rounded-xl border border-neutral-200 dark:border-neutral-800 overflow-hidden transition hover:shadow-lg"
+          >
             <img
               src="/images/experiment-v1.png"
-              alt="Experiment V1: One-page checkout embedded in membership landing page"
-              className="w-full h-auto block"
+              alt="Checkout Experiment V1: Embedded one-page checkout prototype"
+              className="w-full h-auto block transition group-hover:scale-[1.01]"
             />
-          </div>
-          <figcaption className="text-xs text-neutral-500 dark:text-neutral-400">
-            Experiment V1: One-page checkout embedded in membership landing page
+          </a>
+          <figcaption className="flex items-center justify-between text-xs text-neutral-500 dark:text-neutral-400">
+            <span>
+              Checkout Experiment V1: Embedded one-page checkout prototype
+            </span>
+            <a
+              href="https://checkout-experiment-v1.vercel.app/prototype"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-4 hover:text-neutral-700 dark:hover:text-neutral-300"
+            >
+              View Live &rarr;
+            </a>
           </figcaption>
         </figure>
       </section>
