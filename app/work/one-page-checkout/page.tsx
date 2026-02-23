@@ -4,12 +4,12 @@ export default function OnePageCheckoutCaseStudy() {
       {/* Hero */}
       <section className="space-y-6">
         <span className="text-xs uppercase tracking-[0.22em] text-neutral-500 dark:text-neutral-400">
-          Prodigy · Case study
+          Prodigy &middot; Case study
         </span>
 
         <header className="space-y-4">
           <h1 className="text-3xl md:text-4xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
-            One-page checkout experiment (V1 → V2)
+            One-page checkout experiment (V1 &rarr; V2)
           </h1>
           <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
             Designing and running a high-impact membership checkout experiment
@@ -27,13 +27,13 @@ export default function OnePageCheckoutCaseStudy() {
           <div>
             <dt className="uppercase tracking-[0.18em]">Timeline</dt>
             <dd className="mt-1 text-neutral-900 dark:text-neutral-100">
-              ~12 weeks (Oct – Dec 2025)
+              ~12 weeks (Oct &ndash; Dec 2025)
             </dd>
           </div>
           <div>
             <dt className="uppercase tracking-[0.18em]">Area</dt>
             <dd className="mt-1 text-neutral-900 dark:text-neutral-100">
-              Growth · Membership · Experimentation
+              Growth &middot; Membership &middot; Experimentation
             </dd>
           </div>
         </dl>
@@ -55,7 +55,7 @@ export default function OnePageCheckoutCaseStudy() {
           checkout.
         </p>
         <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
-          We ran a fast experiment. The result: –14.9% conversion.
+          We ran a fast experiment. The result: &ndash;14.9% conversion.
         </p>
         <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
           Funnel data and session replays confirmed that collapsing steps
@@ -108,7 +108,7 @@ export default function OnePageCheckoutCaseStudy() {
               </div>
             </div>
             <p className="mt-3 text-xs text-neutral-500 dark:text-neutral-400">
-              Current checkout flow · 7 steps
+              Current checkout flow &middot; 7 steps
             </p>
           </div>
         </div>
@@ -158,14 +158,16 @@ export default function OnePageCheckoutCaseStudy() {
       </section>
 
       {/* Concept exploration */}
-      <section className="space-y-4">
-        <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
-          Concept exploration
-        </h2>
-        <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
-          I explored three structural directions to understand how checkout
-          friction and confidence interact.
-        </p>
+      <section className="space-y-6">
+        <div className="space-y-3">
+          <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+            Concept exploration
+          </h2>
+          <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
+            I explored three structural directions to understand how checkout
+            friction and confidence interact.
+          </p>
+        </div>
 
         <div className="border-t border-neutral-200 dark:border-neutral-800">
           {/* Concept 1 */}
@@ -175,17 +177,18 @@ export default function OnePageCheckoutCaseStudy() {
           >
             <summary className="flex items-center justify-between cursor-pointer py-5 list-none [&::-webkit-details-marker]:hidden">
               <span className="flex flex-col gap-0.5">
-                <span className="text-xs text-neutral-500 dark:text-neutral-400">
+                <span className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
                   Concept 1
                 </span>
                 <span className="text-base font-medium text-neutral-900 dark:text-neutral-100">
-                  Reduce decision load at checkout
+                  Reduce decision making at checkout
                 </span>
               </span>
               <svg
                 className="w-4 h-4 flex-shrink-0 text-neutral-400 transition-transform duration-200 group-open:rotate-180"
                 viewBox="0 0 20 20"
                 fill="currentColor"
+                aria-hidden="true"
               >
                 <path
                   fillRule="evenodd"
@@ -194,14 +197,28 @@ export default function OnePageCheckoutCaseStudy() {
                 />
               </svg>
             </summary>
-            <div className="pb-6 pt-2 space-y-4">
-              <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 max-w-2xl">
-                Locks plan and billing earlier to simplify the final decision
-                moment.
-              </p>
+            <div className="pb-6 pt-1 space-y-4">
+              <div className="space-y-3 max-w-2xl">
+                <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+                  <span className="font-medium text-neutral-900 dark:text-neutral-100">
+                    Approach:
+                  </span>{" "}
+                  Lock in plan and billing earlier, and present checkout as a
+                  focused confirmation and payment step. Users can edit their
+                  selection through a dedicated &ldquo;Change plan&rdquo; action
+                  rather than inline options.
+                </p>
+                <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+                  <span className="font-medium text-neutral-900 dark:text-neutral-100">
+                    Trade-off:
+                  </span>{" "}
+                  Faster checkout, but increased risk of users navigating back to
+                  compare plans.
+                </p>
+              </div>
               <img
                 src="/images/concept-1.png"
-                alt="Checkout concept 1 — reduced decision load"
+                alt="Concept 1 — Reduce decision making at checkout"
                 className="w-full h-auto rounded-lg border border-neutral-200 dark:border-neutral-800"
               />
             </div>
@@ -211,17 +228,18 @@ export default function OnePageCheckoutCaseStudy() {
           <details className="group border-b border-neutral-200 dark:border-neutral-800">
             <summary className="flex items-center justify-between cursor-pointer py-5 list-none [&::-webkit-details-marker]:hidden">
               <span className="flex flex-col gap-0.5">
-                <span className="text-xs text-neutral-500 dark:text-neutral-400">
+                <span className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
                   Concept 2
                 </span>
                 <span className="text-base font-medium text-neutral-900 dark:text-neutral-100">
-                  Remove review step to accelerate completion
+                  Consolidate review and payment into a single step
                 </span>
               </span>
               <svg
                 className="w-4 h-4 flex-shrink-0 text-neutral-400 transition-transform duration-200 group-open:rotate-180"
                 viewBox="0 0 20 20"
                 fill="currentColor"
+                aria-hidden="true"
               >
                 <path
                   fillRule="evenodd"
@@ -230,16 +248,30 @@ export default function OnePageCheckoutCaseStudy() {
                 />
               </svg>
             </summary>
-            <div className="pb-6 pt-2 space-y-3">
-              <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 max-w-2xl">
-                Assumes users already understand their purchase and the review
-                step adds unnecessary friction.
-              </p>
-              <ul className="list-disc pl-5 text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl space-y-1">
-                <li>Remove explicit review page</li>
-                <li>Calculate totals automatically</li>
-                <li>Move directly from payment to confirmation</li>
-              </ul>
+            <div className="pb-6 pt-1 space-y-4">
+              <div className="space-y-3 max-w-2xl">
+                <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+                  <span className="font-medium text-neutral-900 dark:text-neutral-100">
+                    Approach:
+                  </span>{" "}
+                  Remove the explicit review page and automatically calculate
+                  taxes and total amount based on the user&apos;s location.
+                  Present the final amount within the payment step to enable a
+                  direct transition to confirmation.
+                </p>
+                <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+                  <span className="font-medium text-neutral-900 dark:text-neutral-100">
+                    Trade-off:
+                  </span>{" "}
+                  Fewer steps and faster completion, but reduced opportunity for
+                  reassurance before payment.
+                </p>
+              </div>
+              <img
+                src="/images/concept-2.png"
+                alt="Concept 2 — Consolidate review and payment into a single step"
+                className="w-full h-auto rounded-lg border border-neutral-200 dark:border-neutral-800"
+              />
             </div>
           </details>
 
@@ -247,17 +279,18 @@ export default function OnePageCheckoutCaseStudy() {
           <details className="group border-b border-neutral-200 dark:border-neutral-800">
             <summary className="flex items-center justify-between cursor-pointer py-5 list-none [&::-webkit-details-marker]:hidden">
               <span className="flex flex-col gap-0.5">
-                <span className="text-xs text-neutral-500 dark:text-neutral-400">
+                <span className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
                   Concept 3
                 </span>
                 <span className="text-base font-medium text-neutral-900 dark:text-neutral-100">
-                  Balance speed with reassurance signals
+                  Balance speed with confidence
                 </span>
               </span>
               <svg
                 className="w-4 h-4 flex-shrink-0 text-neutral-400 transition-transform duration-200 group-open:rotate-180"
                 viewBox="0 0 20 20"
                 fill="currentColor"
+                aria-hidden="true"
               >
                 <path
                   fillRule="evenodd"
@@ -266,15 +299,31 @@ export default function OnePageCheckoutCaseStudy() {
                 />
               </svg>
             </summary>
-            <div className="pb-6 pt-2 space-y-3">
-              <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 max-w-2xl">
-                Combines speed improvements with confidence-building structure.
-              </p>
-              <ul className="list-disc pl-5 text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl space-y-1">
-                <li>Lock selections earlier</li>
-                <li>Keep pricing context visible</li>
-                <li>Preserve reassurance before payment</li>
-              </ul>
+            <div className="pb-6 pt-1 space-y-4">
+              <div className="space-y-3 max-w-2xl">
+                <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+                  <span className="font-medium text-neutral-900 dark:text-neutral-100">
+                    Approach:
+                  </span>{" "}
+                  Lock in plan and billing earlier, while removing the separate
+                  review step by calculating totals in real time. Keep plan,
+                  pricing, and edit options visible within the payment step to
+                  maintain clarity without introducing additional steps.
+                </p>
+                <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+                  <span className="font-medium text-neutral-900 dark:text-neutral-100">
+                    Why this mattered:
+                  </span>{" "}
+                  This approach balanced speed with user confidence and directly
+                  informed the V2 direction by reducing friction without removing
+                  decision clarity.
+                </p>
+              </div>
+              <img
+                src="/images/concept-3.png"
+                alt="Concept 3 — Balance speed with confidence"
+                className="w-full h-auto rounded-lg border border-neutral-200 dark:border-neutral-800"
+              />
             </div>
           </details>
         </div>
