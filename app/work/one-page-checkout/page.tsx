@@ -494,6 +494,7 @@ export default function OnePageCheckoutCaseStudy() {
   {/* Base */}
   <div className="mx-auto h-2 w-[110%] rounded-b-xl bg-gradient-to-b from-[#d1d1d1] to-[#bdbdbd] shadow-md" />
 </div>
+      </section>
 
       {/* Results */}
       <section className="space-y-4">
