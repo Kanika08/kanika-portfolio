@@ -329,14 +329,16 @@ export default function OnePageCheckoutCaseStudy() {
 
 {/* Stakeholder alignment */}
 <section className="space-y-6">
+
   <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
     When stakeholder intuition diverged from exploration
   </h2>
 
-  <div className="grid md:grid-cols-2 gap-6 md:gap-10 items-start">
-    
-    {/* Left — Text */}
-    <div className="space-y-4 max-w-xl">
+  <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+
+    {/* Left column */}
+    <div className="space-y-4 max-w-lg">
+
       <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
         During early design reviews, leadership pushed to test a single-page checkout, influenced by competitor experiences that appeared shorter at a glance.
       </p>
@@ -344,21 +346,44 @@ export default function OnePageCheckoutCaseStudy() {
       <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
         Given the low cost of experimentation and clear success metrics, I supported this direction as a fast validation, while flagging risks around value clarity and price control.
       </p>
+
     </div>
 
-    {/* Right — Image */}
-    <figure className="space-y-2">
-      <img
-        src="/images/competitor-singlepage-checkout.png"
-        alt="Competitor single-page checkout pattern"
-        className="w-full h-auto rounded-lg border border-neutral-200 dark:border-neutral-800"
-      />
-      <figcaption className="text-xs text-neutral-500 dark:text-neutral-400">
+
+    {/* Right column */}
+    <figure className="space-y-3">
+
+      <div className="mx-auto max-w-3xl flex flex-col items-center">
+
+        {/* Mac frame */}
+        <div className="w-full rounded-t-2xl bg-[#1a1a1a] p-2 pb-4 shadow-2xl shadow-black/10">
+
+          <div className="mx-auto mb-2 h-1 w-12 rounded-full bg-[#2a2a2a]" />
+
+          <div className="overflow-hidden rounded-lg bg-white dark:bg-neutral-900">
+
+            <img
+              src="/images/competitor-single-page-checkout.png"
+              alt="Competitor single-page checkout pattern"
+              className="w-full h-auto block"
+            />
+
+          </div>
+
+        </div>
+
+        <div className="h-2 w-[108%] rounded-b-xl bg-gradient-to-b from-[#d1d1d1] to-[#bdbdbd] shadow-sm" />
+
+      </div>
+
+      <figcaption className="text-xs text-neutral-500 dark:text-neutral-400 text-center max-w-md mx-auto">
         Competitor checkout pattern that influenced stakeholder hypothesis
       </figcaption>
+
     </figure>
 
   </div>
+
 </section>
 
       {/* Hypothesis */}
@@ -373,95 +398,108 @@ export default function OnePageCheckoutCaseStudy() {
         </p>
       </section>
 
-      {/* Experiment V1 */}
-      <section className="space-y-6">
-        <div className="space-y-3">
-          <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
-            Experiment V1
-          </h2>
-          <p className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
-            Testing a one-page checkout
-          </p>
+ {/* Experiment V1 */}
+<section className="space-y-8">
+
+{/* Header */}
+<div className="space-y-3">
+  <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+    Experiment V1
+  </h2>
+  <p className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
+    Testing a one-page checkout
+  </p>
+</div>
+
+{/* Intro */}
+<p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
+  We tested a one-page checkout embedded directly on the membership
+  landing page, allowing users to select a plan and complete payment
+  without leaving the page.
+</p>
+
+{/* Key changes */}
+<div className="space-y-3">
+  <h3 className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
+    Key changes
+  </h3>
+  <ul className="list-disc pl-5 space-y-2 text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
+    <li>Payment collection embedded on the membership landing page</li>
+    <li>Discount code entry available directly on the page</li>
+    <li>Existing multi-step checkout flow fully bypassed</li>
+  </ul>
+</div>
+
+{/* Design goal */}
+<div className="rounded-xl border border-blue-200 dark:border-blue-900 bg-blue-50/60 dark:bg-blue-950/30 px-5 py-5 max-w-2xl space-y-2">
+
+  <p className="text-xs uppercase tracking-[0.18em] text-blue-700 dark:text-blue-400">
+    Design goal
+  </p>
+
+  <p className="text-sm md:text-base font-medium text-neutral-900 dark:text-neutral-100 leading-relaxed">
+    Eliminate context switching and validate whether checkout friction alone
+    was the primary barrier to conversion.
+  </p>
+
+</div>
+
+{/* Experiment setup grid */}
+<div className="grid md:grid-cols-2 gap-4 max-w-3xl">
+
+  {/* Target users */}
+  <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 px-5 py-5 space-y-3">
+
+    <div className="text-xs font-medium text-neutral-500 dark:text-neutral-400">
+      Target users
+    </div>
+
+    <ul className="space-y-1 text-sm md:text-base text-neutral-700 dark:text-neutral-300 list-disc pl-4">
+      <li>Parents purchasing a new membership for their child</li>
+      <li>Users entering from the Math Game membership landing page</li>
+      <li>Excludes existing members</li>
+    </ul>
+
+  </div>
+
+
+  {/* Success metrics */}
+  <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 px-5 py-5 space-y-4">
+
+    <div className="text-xs font-medium text-neutral-500 dark:text-neutral-400">
+      Success metrics
+    </div>
+
+    <div className="space-y-3">
+
+      <div>
+        <div className="text-xs font-medium uppercase tracking-wide text-neutral-400 dark:text-neutral-500">
+          Primary
         </div>
-
-        <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
-          We tested a one-page checkout embedded directly on the membership
-          landing page, allowing users to select a plan and complete payment
-          without leaving the page.
-        </p>
-
-        {/* Key changes */}
-        <div className="space-y-3">
-          <h3 className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
-            Key changes
-          </h3>
-          <ul className="list-disc pl-5 space-y-2 text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
-            <li>Payment collection embedded on the membership landing page</li>
-            <li>Discount code entry available directly on the page</li>
-            <li>Existing multi-step checkout flow fully bypassed</li>
-          </ul>
+        <div className="text-sm md:text-base text-neutral-800 dark:text-neutral-200">
+          Checkout conversion rate
         </div>
+      </div>
 
-        {/* Design goal callout */}
-        <div className="rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 px-5 py-4 max-w-2xl">
-          <h3 className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400 mb-2">
-            Design goal
-          </h3>
-          <p className="text-sm md:text-base text-neutral-700 dark:text-neutral-300 leading-relaxed">
-            Eliminate context switching and validate whether checkout friction
-            alone was the primary barrier to conversion.
-          </p>
+      <div>
+        <div className="text-xs font-medium uppercase tracking-wide text-neutral-400 dark:text-neutral-500">
+          Secondary
         </div>
+        <ul className="space-y-1 text-sm md:text-base text-neutral-700 dark:text-neutral-300 list-disc pl-4">
+          <li>Time to checkout</li>
+          <li>Click-through rate</li>
+        </ul>
+      </div>
 
-        {/* Experiment definition grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
-          {/* Target users */}
-          <div className="space-y-3">
-            <h3 className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
-              Target users
-            </h3>
-            <ul className="list-disc pl-5 space-y-2 text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
-              <li>
-                Parents purchasing a new membership for their child
-              </li>
-              <li>
-                Users entering from the Math Game membership landing page
-              </li>
-              <li>Excludes existing members</li>
-            </ul>
-          </div>
+    </div>
 
-          {/* Success metrics */}
-          <div className="space-y-3">
-            <h3 className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
-              Success metrics
-            </h3>
-            <div className="space-y-4">
-              <div>
-                <p className="text-xs font-medium uppercase tracking-[0.14em] text-neutral-900 dark:text-neutral-100 mb-1.5">
-                  Primary
-                </p>
-                <ul className="list-disc pl-5 space-y-1 text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
-                  <li>Checkout conversion rate</li>
-                </ul>
-              </div>
-              <div>
-                <p className="text-xs font-medium uppercase tracking-[0.14em] text-neutral-900 dark:text-neutral-100 mb-1.5">
-                  Secondary
-                </p>
-                <ul className="list-disc pl-5 space-y-1 text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
-                  <li>Time to checkout</li>
-                  <li>Click-through rate</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+  </div>
 
-      </section>
+</div>
 
-      {/* Checkout Experiment V1 */}
-<section className="space-y-6">
+{/* Prototype video */}
+<div className="space-y-4">
+
   <h3 className="text-lg font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
     Checkout Experiment V1
   </h3>
@@ -474,13 +512,11 @@ export default function OnePageCheckoutCaseStudy() {
 
   <div className="mx-auto max-w-5xl flex flex-col items-center">
 
-    {/* Screen lid */}
+    {/* Mac frame */}
     <div className="w-full rounded-t-2xl bg-[#1a1a1a] p-2 pb-4 shadow-2xl shadow-black/20">
 
-      {/* Camera notch */}
       <div className="mx-auto mb-2 h-1 w-12 rounded-full bg-[#2a2a2a]" />
 
-      {/* Screen */}
       <div className="overflow-hidden rounded-lg bg-black">
         <video
           autoPlay
@@ -492,35 +528,95 @@ export default function OnePageCheckoutCaseStudy() {
           <source src="/videos/checkout-prototype.mp4" type="video/mp4" />
         </video>
       </div>
+
     </div>
 
-    {/* Base */}
     <div className="h-2 w-[108%] rounded-b-xl bg-gradient-to-b from-[#d1d1d1] to-[#bdbdbd] shadow-md" />
 
   </div>
+
+</div>
+
+{/* Results */}
+<div className="space-y-4">
+
+  <h3 className="text-lg font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+    Results
+  </h3>
+
+  <div className="bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-xl p-6 space-y-3 max-w-2xl">
+
+    <div className="text-xs text-neutral-500 dark:text-neutral-400">
+      Experiment outcome
+    </div>
+
+    <div className="text-2xl md:text-3xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+      –14.9% conversion
+    </div>
+
+    <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+      Conversion declined significantly. Consistent drops at full (–27%) and partial (–14.9%) exposure confirmed the experience itself reduced conversion—not the rollout.
+    </p>
+
+  </div>
+
+</div>
+
 </section>
 
-        
-
-      {/* Results */}
-      <section className="space-y-4">
-        <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
-          Results
-        </h2>
-        <div className="bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 text-sm md:text-base text-neutral-700 dark:text-neutral-300 max-w-2xl">
-          Conversion dropped by double digits.
-        </div>
-      </section>
-
-      {/* Impact & Takeaway */}
-      <section className="space-y-4">
+      
+      {/* Impact and design direction */}
+      <section className="space-y-6">
         <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
           Impact &amp; Takeaway
         </h2>
         <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
-          The failed experiment clarified how to design checkout flows that
-          build trust and confidence.
+          At this point, I used evidence and not opinion to resolve
+          disagreement and drive a clear decision on next steps.
         </p>
+        <ul className="list-disc pl-5 space-y-2 text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
+          <li>Used funnel data and session replays to explain why conversion dropped</li>
+          <li>Shifted discussion from “shorter checkout” to purchase confidence</li>
+          <li>Built alignment across design, product and leadership on next steps</li>
+        </ul>
+
+        {/* Design principles */}
+        <div className="space-y-3">
+        <p className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
+    Design principles
+  </p>
+
+          
+
+          <div className="grid md:grid-cols-3 gap-3 md:gap-4 max-w-3xl">
+            <div className="rounded-lg border border-blue-200 dark:border-blue-900 bg-blue-50/60 dark:bg-blue-950/30 px-4 py-4">
+              <div className="text-xs font-medium text-blue-700 dark:text-blue-400 mb-1">
+                Confidence
+              </div>
+              <div className="text-sm md:text-base font-medium text-neutral-900 dark:text-neutral-100">
+                Checkout steps build confidence, not just progression
+              </div>
+            </div>
+
+            <div className="rounded-lg border border-emerald-200 dark:border-emerald-900 bg-emerald-50/60 dark:bg-emerald-950/30 px-4 py-4">
+              <div className="text-xs font-medium text-emerald-700 dark:text-emerald-400 mb-1">
+                Clarity
+              </div>
+              <div className="text-sm md:text-base font-medium text-neutral-900 dark:text-neutral-100">
+                Friction reduction must preserve price transparency and control
+              </div>
+            </div>
+
+            <div className="rounded-lg border border-amber-200 dark:border-amber-900 bg-amber-50/60 dark:bg-amber-950/30 px-4 py-4">
+              <div className="text-xs font-medium text-amber-700 dark:text-amber-400 mb-1">
+                Balance
+              </div>
+              <div className="text-sm md:text-base font-medium text-neutral-900 dark:text-neutral-100">
+                Speed matters, but clarity matters more
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* ── Experiment V2 ─────────────────────────────────── */}
@@ -545,9 +641,7 @@ export default function OnePageCheckoutCaseStudy() {
             Experiment V2
           </h2>
           <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
-            Rather than removing structure entirely, V2 focused on reducing
-            steps while preserving decision clarity and confidence at the
-            moment of payment.
+          V1 reduced friction but removed decision clarity. Instead of abandoning the approach, we iterated to reduce steps without sacrificing confidence at purchase.
           </p>
         </div>
 
