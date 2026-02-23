@@ -164,8 +164,7 @@ export default function OnePageCheckoutCaseStudy() {
             Concept exploration
           </h2>
           <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
-            I explored three structural directions to understand how checkout
-            friction and confidence interact.
+          I explored three directions to reduce checkout friction, each testing a different balance of speed and clarity.
           </p>
         </div>
 
@@ -173,7 +172,6 @@ export default function OnePageCheckoutCaseStudy() {
           {/* Concept 1 */}
           <details
             className="group border-b border-neutral-200 dark:border-neutral-800"
-            open
           >
             <summary className="flex items-center justify-between cursor-pointer py-5 list-none [&::-webkit-details-marker]:hidden">
               <span className="flex flex-col gap-0.5">
@@ -329,16 +327,150 @@ export default function OnePageCheckoutCaseStudy() {
         </div>
       </section>
 
+{/* Stakeholder alignment */}
+<section className="space-y-6">
+  <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+    When stakeholder intuition diverged from exploration
+  </h2>
+
+  <div className="grid md:grid-cols-2 gap-6 md:gap-10 items-start">
+    
+    {/* Left — Text */}
+    <div className="space-y-4 max-w-xl">
+      <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+        During early design reviews, leadership pushed to test a single-page checkout, influenced by competitor experiences that appeared shorter at a glance.
+      </p>
+
+      <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+        Given the low cost of experimentation and clear success metrics, I supported this direction as a fast validation, while flagging risks around value clarity and price control.
+      </p>
+    </div>
+
+    {/* Right — Image */}
+    <figure className="space-y-2">
+      <img
+        src="/images/competitor-singlepage-checkout.png"
+        alt="Competitor single-page checkout pattern"
+        className="w-full h-auto rounded-lg border border-neutral-200 dark:border-neutral-800"
+      />
+      <figcaption className="text-xs text-neutral-500 dark:text-neutral-400">
+        Competitor checkout pattern that influenced stakeholder hypothesis
+      </figcaption>
+    </figure>
+
+  </div>
+</section>
+
       {/* Hypothesis */}
       <section className="space-y-4">
         <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
           Hypothesis
         </h2>
-        <ul className="list-disc pl-5 space-y-2 text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
-          <li>Higher checkout completion</li>
-          <li>Reduced confusion</li>
-          <li>Stronger experimentation foundation</li>
-        </ul>
+        <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
+        If checkout friction is the primary driver of drop-off, then consolidating
+        the flow into a single-page checkout should reduce time-to-complete a transaction
+        and increase conversion by minimising moments of reconsideration.
+        </p>
+      </section>
+
+      {/* Experiment V1 */}
+      <section className="space-y-6">
+        <div className="space-y-3">
+          <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+            Experiment V1
+          </h2>
+          <p className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
+            Testing a one-page checkout
+          </p>
+        </div>
+
+        <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
+          We tested a one-page checkout embedded directly on the membership
+          landing page, allowing users to select a plan and complete payment
+          without leaving the page.
+        </p>
+
+        {/* Key changes */}
+        <div className="space-y-3">
+          <h3 className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
+            Key changes
+          </h3>
+          <ul className="list-disc pl-5 space-y-2 text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
+            <li>Payment collection embedded on the membership landing page</li>
+            <li>Discount code entry available directly on the page</li>
+            <li>Existing multi-step checkout flow fully bypassed</li>
+          </ul>
+        </div>
+
+        {/* Design goal callout */}
+        <div className="rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 px-5 py-4 max-w-2xl">
+          <h3 className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400 mb-2">
+            Design goal
+          </h3>
+          <p className="text-sm md:text-base text-neutral-700 dark:text-neutral-300 leading-relaxed">
+            Eliminate context switching and validate whether checkout friction
+            alone was the primary barrier to conversion.
+          </p>
+        </div>
+
+        {/* Experiment definition grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+          {/* Target users */}
+          <div className="space-y-3">
+            <h3 className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
+              Target users
+            </h3>
+            <ul className="list-disc pl-5 space-y-2 text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+              <li>
+                Parents purchasing a new membership for their child
+              </li>
+              <li>
+                Users entering from the Math Game membership landing page
+              </li>
+              <li>Excludes existing members</li>
+            </ul>
+          </div>
+
+          {/* Success metrics */}
+          <div className="space-y-3">
+            <h3 className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
+              Success metrics
+            </h3>
+            <div className="space-y-4">
+              <div>
+                <p className="text-xs font-medium uppercase tracking-[0.14em] text-neutral-900 dark:text-neutral-100 mb-1.5">
+                  Primary
+                </p>
+                <ul className="list-disc pl-5 space-y-1 text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+                  <li>Checkout conversion rate</li>
+                </ul>
+              </div>
+              <div>
+                <p className="text-xs font-medium uppercase tracking-[0.14em] text-neutral-900 dark:text-neutral-100 mb-1.5">
+                  Secondary
+                </p>
+                <ul className="list-disc pl-5 space-y-1 text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+                  <li>Time to checkout</li>
+                  <li>Click-through rate</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Experiment V1 image */}
+        <figure className="space-y-3">
+          <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 overflow-hidden">
+            <img
+              src="/images/experiment-v1.png"
+              alt="Experiment V1: One-page checkout embedded in membership landing page"
+              className="w-full h-auto block"
+            />
+          </div>
+          <figcaption className="text-xs text-neutral-500 dark:text-neutral-400">
+            Experiment V1: One-page checkout embedded in membership landing page
+          </figcaption>
+        </figure>
       </section>
 
       {/* Results */}
