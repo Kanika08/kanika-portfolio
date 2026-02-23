@@ -461,40 +461,46 @@ export default function OnePageCheckoutCaseStudy() {
       </section>
 
       {/* Checkout Experiment V1 */}
-      <section className="space-y-6">
-        <h3 className="text-lg font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
-          Checkout Experiment V1
-        </h3>
+<section className="space-y-6">
+  <h3 className="text-lg font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+    Checkout Experiment V1
+  </h3>
 
-        <p className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
-          A high-fidelity prototype demonstrating embedded one-page checkout on
-          the membership landing page, including simulated real-time tax
-          calculation and purchase confirmation state.
-        </p>
+  <p className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
+    A high-fidelity prototype demonstrating embedded one-page checkout on
+    the membership landing page, including simulated real-time tax
+    calculation and purchase confirmation state.
+  </p>
 
-        <div className="mx-auto max-w-5xl">
-  <div className="rounded-t-2xl bg-[#1a1a1a] p-2 pb-4 shadow-2xl shadow-black/20">
-    {/* Camera notch */}
-    <div className="mx-auto mb-2 h-1 w-12 rounded-full bg-[#2a2a2a]" />
+  <div className="mx-auto max-w-5xl flex flex-col items-center">
 
-    {/* Screen */}
-    <div className="overflow-hidden rounded-lg bg-black">
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="w-full h-auto block"
-      >
-        <source src="/videos/checkout-prototype.mp4" type="video/mp4" />
-      </video>
+    {/* Screen lid */}
+    <div className="w-full rounded-t-2xl bg-[#1a1a1a] p-2 pb-4 shadow-2xl shadow-black/20">
+
+      {/* Camera notch */}
+      <div className="mx-auto mb-2 h-1 w-12 rounded-full bg-[#2a2a2a]" />
+
+      {/* Screen */}
+      <div className="overflow-hidden rounded-lg bg-black">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-auto block"
+        >
+          <source src="/videos/checkout-prototype.mp4" type="video/mp4" />
+        </video>
+      </div>
     </div>
-  </div>
 
-  {/* Base */}
-  <div className="mx-auto h-2 w-[110%] rounded-b-xl bg-gradient-to-b from-[#d1d1d1] to-[#bdbdbd] shadow-md" />
-</div>
-      </section>
+    {/* Base */}
+    <div className="h-2 w-[108%] rounded-b-xl bg-gradient-to-b from-[#d1d1d1] to-[#bdbdbd] shadow-md" />
+
+  </div>
+</section>
+
+        
 
       {/* Results */}
       <section className="space-y-4">
@@ -515,6 +521,112 @@ export default function OnePageCheckoutCaseStudy() {
           The failed experiment clarified how to design checkout flows that
           build trust and confidence.
         </p>
+      </section>
+
+      {/* ── Experiment V2 ─────────────────────────────────── */}
+
+      {/* Hypothesis V2 */}
+      <section className="space-y-4">
+        <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+          Hypothesis V2
+        </h2>
+        <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
+          If checkout steps are reduced while preserving pricing clarity and
+          reinforcing plan value at the point of payment, then users will be
+          more likely to complete their purchase, resulting in higher
+          conversion.
+        </p>
+      </section>
+
+      {/* Experiment V2 */}
+      <section className="space-y-6">
+        <div className="space-y-3">
+          <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+            Experiment V2
+          </h2>
+          <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
+            Rather than removing structure entirely, V2 focused on reducing
+            steps while preserving decision clarity and confidence at the
+            moment of payment.
+          </p>
+        </div>
+
+        <div className="space-y-3">
+          <h3 className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
+            Key changes
+          </h3>
+          <ul className="list-disc pl-5 space-y-2 text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
+            <li>
+              Reduced checkout steps while keeping tier selection and value
+              visible
+            </li>
+            <li>
+              Reinforced plan benefits and pricing context during payment
+            </li>
+            <li>Removed redundant confirmation without removing clarity</li>
+            <li>Maintained visible value summary throughout checkout</li>
+            <li>Auto-attached student for game-driven purchases</li>
+            <li>Streamlined post-purchase confirmation</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* Final design */}
+      <section className="space-y-4">
+        <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+          Final design
+        </h2>
+        <figure className="space-y-3">
+          <img
+            src="/images/checkout-v2-final.png"
+            alt="Final V2 checkout experience balancing speed and confidence"
+            className="w-full h-auto rounded-xl border border-neutral-200 dark:border-neutral-800"
+          />
+          <figcaption className="text-xs text-neutral-500 dark:text-neutral-400">
+            Final checkout experience balancing speed and confidence
+          </figcaption>
+        </figure>
+      </section>
+
+      {/* Results — V2 */}
+      <section className="space-y-4">
+        <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+          Results
+        </h2>
+        <div className="rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 px-5 py-4 max-w-2xl space-y-2">
+          <h3 className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
+            Early directional signal
+          </h3>
+          <p className="text-sm md:text-base text-neutral-700 dark:text-neutral-300 leading-relaxed">
+            The experiment was still in progress at the time of my departure.
+            Early data showed a positive directional lift in conversion, with
+            no technical issues or negative behavioral signals observed.
+            Results had not yet reached statistical significance within the
+            initial evaluation window.
+          </p>
+        </div>
+      </section>
+
+      {/* Growth impact */}
+      <section className="space-y-6">
+        <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+          Growth impact
+        </h2>
+        <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
+          Experiment V2 demonstrated that reducing friction alone was
+          insufficient without preserving clarity. Reinforcing pricing context
+          and plan value at the point of payment improved user confidence and
+          created a stronger foundation for conversion.
+        </p>
+        <div className="rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 px-5 py-4 max-w-2xl">
+          <h3 className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400 mb-2">
+            Key takeaway
+          </h3>
+          <p className="text-sm md:text-base font-medium text-neutral-900 dark:text-neutral-100 leading-relaxed">
+            Confidence at the moment of payment is as important as reducing
+            friction.
+          </p>
+        </div>
       </section>
     </article>
   );
