@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import ProtectedPage from "@/components/ProtectedPage";
+
 
 
 const tagStyles: Record<string, string> = {
@@ -13,7 +15,8 @@ export default function OnePageCheckoutCaseStudy() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <article className="max-w-3xl mx-auto pb-20 space-y-10">
+    <ProtectedPage correctPassword="checkout2024">
+      <article className="max-w-3xl mx-auto pb-20 space-y-10">
 
       {/* Breadcrumb */}
       <div>
@@ -844,5 +847,6 @@ export default function OnePageCheckoutCaseStudy() {
 
 </section>
     </article>
+    </ProtectedPage>
   );
 }

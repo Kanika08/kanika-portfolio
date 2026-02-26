@@ -98,18 +98,29 @@ export default function WorkPage() {
             <article className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
 
               {/* Image container */}
-              <div
-                className={`
-                  aspect-[4/3]
-                  rounded-xl
-                  ${study.imageBg}
-                  flex items-center justify-center
-                  transition
-                  group-hover:scale-[1.01]
-                `}
-              >
-                {/* placeholder — you will add image later */}
-              </div>
+<div
+  className={`
+    relative
+    aspect-[4/3]
+    rounded-xl
+    overflow-hidden
+    ${study.imageBg}
+    transition
+    duration-300
+  `}
+>
+  {study.image && (
+    <img
+      src={study.image}
+      alt=""
+      className="
+        w-full
+        h-full
+        object-cover
+      "
+    />
+  )}
+</div>
 
               {/* Text content */}
               <div>
