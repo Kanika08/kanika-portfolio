@@ -32,10 +32,12 @@ const caseStudies = [
         </span>
       </>
     ),
+    
     summary:
-      "Redesigned the membership checkout flow through structured experimentation. Improving conversion while documenting failures as reusable learnings for the growth team.",
+    "Designing and running a high-impact membership checkout experiment and turning a failed test into a growth playbook.",
     tags: ["Experimentation", "Membership", "Growth design"],
     readTime: "8 min read",
+    image: "/images/cover-one-page-checkout.png", 
     imageBg: "bg-[#E6F0FF] dark:bg-neutral-800",
   },
   {

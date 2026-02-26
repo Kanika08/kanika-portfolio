@@ -1,4 +1,7 @@
+"use client";
+import { useState } from "react";
 import Link from "next/link";
+
 
 const tagStyles: Record<string, string> = {
   Growth: "bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-400",
@@ -7,6 +10,8 @@ const tagStyles: Record<string, string> = {
 };
 
 export default function OnePageCheckoutCaseStudy() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <article className="max-w-3xl mx-auto pb-20 space-y-10">
 
@@ -28,8 +33,7 @@ export default function OnePageCheckoutCaseStudy() {
         </h1>
 
         <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
-          Designing and running a high-impact membership checkout experiment
-          and turning a failed test into a growth playbook.
+        Ran a high-impact membership checkout experiment, turning a failed test into a scalable growth playbook.
         </p>
 
         {/* Meta Grid */}
@@ -57,28 +61,8 @@ export default function OnePageCheckoutCaseStudy() {
             <dt className="text-xs uppercase tracking-[0.18em] text-neutral-500">
               Timeline
             </dt>
-            <dd className="mt-2 text-neutral-900 dark:text-neutral-100">
+            <dd className="mt-2 text-neutral-900 dark:text-neutral-100 whitespace-nowrap">
               ~12 weeks (Oct – Dec 2025)
-            </dd>
-          </div>
-
-          <div>
-            <dt className="text-xs uppercase tracking-[0.18em] text-neutral-500">
-              Area
-            </dt>
-            <dd className="mt-2 flex flex-wrap gap-2">
-              {["Growth", "Membership", "Experimentation"].map((tag) => (
-                <span
-                  key={tag}
-                  className={
-                    "text-xs px-2.5 py-1 rounded-md " +
-                    (tagStyles[tag] ||
-                      "bg-neutral-100 text-neutral-600 dark:bg-neutral-800 dark:text-neutral-300")
-                  }
-                >
-                  {tag}
-                </span>
-              ))}
             </dd>
           </div>
 
@@ -163,22 +147,39 @@ export default function OnePageCheckoutCaseStudy() {
       </section>
 
       {/* Flowchart image */}
-      <section className="space-y-3">
-        <div className="flex justify-center">
-          <div className="w-full max-w-2xl">
-            <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 overflow-hidden">
-              <img
-                src="/images/checkout-flowchart.png"
-                alt="Checkout flow diagram showing 7 steps"
-                className="w-full h-auto block"
-              />
-            </div>
-            <p className="mt-3 text-xs text-neutral-500 dark:text-neutral-400">
-              Checkout flow structure showing step-by-step progression
-            </p>
-          </div>
-        </div>
-      </section>
+<section className="space-y-3">
+  <div className="flex justify-center">
+    <div className="w-full max-w-2xl">
+      <div
+        className="rounded-xl border border-neutral-200 dark:border-neutral-800 overflow-hidden cursor-zoom-in"
+        onClick={() => setIsOpen(true)}
+      >
+        <img
+          src="/images/checkout-flowchart.png"
+          alt="Checkout flow diagram showing 7 steps"
+          className="w-full h-auto block transition-transform duration-300 hover:scale-[1.02]"
+        />
+      </div>
+      <p className="mt-3 text-xs text-neutral-500 dark:text-neutral-400">
+        Checkout flow structure showing step-by-step progression
+      </p>
+    </div>
+  </div>
+
+  {/* Modal */}
+  {isOpen && (
+    <div
+      className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 cursor-zoom-out"
+      onClick={() => setIsOpen(false)}
+    >
+      <img
+        src="/images/checkout-flowchart.png"
+        alt="Expanded checkout flow diagram"
+        className="max-w-[95%] max-h-[90%] rounded-lg shadow-2xl"
+      />
+    </div>
+  )}
+</section>
 
       {/* My Role & Approach */}
       <section className="space-y-4">
@@ -418,7 +419,7 @@ export default function OnePageCheckoutCaseStudy() {
       {/* Hypothesis */}
       <section className="space-y-4">
         <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
-          Hypothesis
+          Hypothesis V1
         </h2>
         <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
           If checkout friction is the primary driver of drop-off, then consolidating
@@ -513,7 +514,7 @@ export default function OnePageCheckoutCaseStudy() {
         {/* Prototype video */}
         <div className="space-y-4">
           <h3 className="text-lg font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
-            Checkout Experiment V1
+             Prototype 
           </h3>
           <p className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
             A high-fidelity prototype demonstrating embedded one-page checkout on
@@ -620,94 +621,228 @@ export default function OnePageCheckoutCaseStudy() {
         </p>
       </section>
 
-      {/* Experiment V2 */}
-      <section className="space-y-6">
-        <div className="space-y-3">
-          <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
-            Experiment V2
-          </h2>
-          <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
-            V1 reduced friction but removed decision clarity. Instead of abandoning the approach, we iterated to reduce steps without sacrificing confidence at purchase.
-          </p>
-        </div>
+     {/* Experiment V2 */}
+<section className="space-y-6">
 
-        <div className="space-y-3">
-          <h3 className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
-            Key changes
-          </h3>
-          <ul className="list-disc pl-5 space-y-2 text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
-            <li>
-              Reduced checkout steps while keeping tier selection and value
-              visible
-            </li>
-            <li>
-              Reinforced plan benefits and pricing context during payment
-            </li>
-            <li>Removed redundant confirmation without removing clarity</li>
-            <li>Maintained visible value summary throughout checkout</li>
-            <li>Auto-attached student for game-driven purchases</li>
-            <li>Streamlined post-purchase confirmation</li>
-          </ul>
-        </div>
-      </section>
+{/* Header */}
+<div className="space-y-3">
+  <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+    Experiment V2
+  </h2>
+  <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
+    V1 reduced friction but removed decision clarity. Instead of abandoning the approach, 
+    we iterated to reduce steps without sacrificing confidence at purchase.
+  </p>
+</div>
 
-      {/* Final design */}
-      <section className="space-y-4">
-        <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
-          Final design
-        </h2>
-        <figure className="space-y-3">
-          <img
-            src="/images/checkout-v2-final.png"
-            alt="Final V2 checkout experience balancing speed and confidence"
-            className="w-full h-auto rounded-xl border border-neutral-200 dark:border-neutral-800"
+{/* Key changes */}
+<div className="space-y-3">
+  <h3 className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
+    Key changes
+  </h3>
+  <ul className="list-disc pl-5 space-y-2 text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
+    <li>Reduced checkout steps while keeping tier selection and value visible</li>
+    <li>Reinforced plan benefits and pricing context during payment</li>
+    <li>Removed redundant confirmation without removing clarity</li>
+    <li>Maintained visible value summary throughout checkout</li>
+    <li>Auto-attached student for game-driven purchases</li>
+    <li>Streamlined post-purchase confirmation</li>
+  </ul>
+</div>
+
+{/* Prototype */}
+<div className="space-y-4 pt-6">
+  <h3 className="text-lg font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+    Prototype
+  </h3>
+  <p className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
+    A high-fidelity prototype demonstrating a streamlined checkout that reduces steps while
+    preserving decision clarity — reinforcing tier benefits, pricing context, and value
+    at the moment of payment.
+  </p>
+
+  <div className="mx-auto max-w-5xl flex flex-col items-center">
+    <div className="w-full rounded-t-2xl bg-[#1a1a1a] p-2 pb-4 shadow-2xl shadow-black/20">
+      <div className="mx-auto mb-2 h-1 w-12 rounded-full bg-[#2a2a2a]" />
+      <div className="overflow-hidden rounded-lg bg-black">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-auto block"
+        >
+          <source
+            src="/videos/checkout-prototype-2.mp4"
+            type="video/mp4"
           />
-          <figcaption className="text-xs text-neutral-500 dark:text-neutral-400">
-            Final checkout experience balancing speed and confidence
-          </figcaption>
-        </figure>
-      </section>
+        </video>
+      </div>
+    </div>
+    <div className="h-2 w-[108%] rounded-b-xl bg-gradient-to-b from-[#d1d1d1] to-[#bdbdbd] shadow-md" />
+  </div>
+</div>
 
-      {/* Results — V2 */}
-      <section className="space-y-4">
-        <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
-          Results
-        </h2>
-        <div className="rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 px-5 py-4 max-w-2xl space-y-2">
-          <h3 className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
-            Early directional signal
-          </h3>
-          <p className="text-sm md:text-base text-neutral-700 dark:text-neutral-300 leading-relaxed">
-            The experiment was still in progress at the time of my departure.
-            Early data showed a positive directional lift in conversion, with
-            no technical issues or negative behavioral signals observed.
-            Results had not yet reached statistical significance within the
-            initial evaluation window.
-          </p>
-        </div>
-      </section>
+</section>
 
-      {/* Growth impact */}
-      <section className="space-y-6">
-        <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
-          Growth impact
-        </h2>
-        <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
-          Experiment V2 demonstrated that reducing friction alone was
-          insufficient without preserving clarity. Reinforcing pricing context
-          and plan value at the point of payment improved user confidence and
-          created a stronger foundation for conversion.
+      {/* Component Deep Dive */}
+<section className="space-y-8">
+  {/* Header */}
+  <div className="space-y-3 max-w-2xl">
+    <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+      Component Deep Dive: The Membership Card
+    </h2>
+    <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+      The membership card evolved from a feature-heavy explanation to a structured
+      decision surface — reducing cognitive load while reinforcing pricing clarity
+      and plan value at checkout.
+    </p>
+  </div>
+
+  {/* Evolution Grid */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+    {/* V1 */}
+    <div className="space-y-4">
+      <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 overflow-hidden shadow-sm">
+        <img
+          src="/images/ideation-membership-card.png"
+          alt="Initial membership card design with dense content and heavy text"
+          className="w-full h-auto block"
+        />
+      </div>
+      <div className="space-y-2">
+        <p className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
+          V1
         </p>
-        <div className="rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 px-5 py-4 max-w-2xl">
-          <h3 className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400 mb-2">
-            Key takeaway
-          </h3>
-          <p className="text-sm md:text-base font-medium text-neutral-900 dark:text-neutral-100 leading-relaxed">
-            Confidence at the moment of payment is as important as reducing
-            friction.
-          </p>
-        </div>
-      </section>
+        <p className="text-sm font-medium text-neutral-900 dark:text-neutral-100">
+          Feature-heavy & cognitively dense
+        </p>
+        <ul className="text-sm text-neutral-600 dark:text-neutral-400 space-y-1 list-disc pl-4">
+          <li>Paragraph-driven value explanation</li>
+          <li>Benefits buried within long-form content</li>
+          <li>Icon relied on brand recognition</li>
+        </ul>
+      </div>
+    </div>
+
+    {/* Iteration */}
+    <div className="space-y-4">
+      <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 overflow-hidden shadow-sm">
+        <img
+          src="/images/iteration-membership-card.png"
+          alt="Iterated membership card with clearer hierarchy and scannable value"
+          className="w-full h-auto block"
+        />
+      </div>
+      <div className="space-y-2">
+        <p className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
+          Iteration
+        </p>
+        <p className="text-sm font-medium text-neutral-900 dark:text-neutral-100">
+          Value made scannable
+        </p>
+        <ul className="text-sm text-neutral-600 dark:text-neutral-400 space-y-1 list-disc pl-4">
+          <li>Games surfaced visually at the top</li>
+          <li>Bite-sized benefit structure</li>
+          <li>Reduced reliance on explanatory text</li>
+        </ul>
+      </div>
+    </div>
+
+    {/* Final */}
+    <div className="space-y-4">
+      <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 overflow-hidden shadow-sm">
+        <img
+          src="/images/final-membership-card.png"
+          alt="Final membership card with pricing clarity and structured hierarchy"
+          className="w-full h-auto block"
+        />
+      </div>
+      <div className="space-y-2">
+        <p className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
+          Final
+        </p>
+        <p className="text-sm font-medium text-neutral-900 dark:text-neutral-100">
+          Designed for confidence & control
+        </p>
+        <ul className="text-sm text-neutral-600 dark:text-neutral-400 space-y-1 list-disc pl-4">
+          <li>Plan identity locked at the top</li>
+          <li>Clear monthly vs annual comparison</li>
+          <li>Strengthened pricing hierarchy</li>
+          <li>User control preserved with “Change plan”</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+   {/* Results & Growth Reflection */}
+<section className="space-y-10">
+
+{/* Results */}
+<div className="space-y-4">
+  <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+    Results
+  </h2>
+
+  <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 px-6 py-6 max-w-2xl space-y-3">
+    <h3 className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
+      Early directional signal
+    </h3>
+    <p className="text-sm md:text-base text-neutral-700 dark:text-neutral-300 leading-relaxed">
+      The experiment remained within its evaluation window at the time of my departure.
+      Early data indicated a positive directional lift in conversion, with no
+      technical regressions or negative behavioral signals observed.
+      Statistical significance had not yet been reached, but initial trends
+      supported the revised direction.
+    </p>
+  </div>
+</div>
+
+{/* Growth Reflection */}
+<div className="space-y-6 max-w-2xl">
+  <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+    Growth Reflection & Impact
+  </h2>
+
+  <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+    Reducing friction alone does not drive growth. Increasing confidence at
+    critical decision moments does.
+  </p>
+
+  <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+    V1 accelerated progression but reduced clarity around pricing and value.
+    Users moved faster, yet felt less certain — and conversion declined.
+  </p>
+
+  <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+    V2 reframed checkout as a confidence checkpoint. By reinforcing tier value
+    and pricing context at payment, the experience became more deliberate and
+    trustworthy.
+  </p>
+
+  {/* Strategic Impact Card */}
+  <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 px-6 py-6 space-y-4">
+    <h3 className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
+      Strategic impact
+    </h3>
+    <ul className="space-y-2 text-sm md:text-base text-neutral-700 dark:text-neutral-300 list-disc pl-5">
+      <li>Repositioned clarity as a measurable growth lever</li>
+      <li>Aligned stakeholders around evidence over intuition</li>
+      <li>Balanced speed with transparency to support long-term value</li>
+    </ul>
+  </div>
+
+  {/* Closing statement */}
+  <div className="pt-4">
+    <p className="text-base md:text-lg font-medium text-neutral-900 dark:text-neutral-100 leading-relaxed">
+      Sustainable growth is not about fewer steps. It is about stronger conviction.
+    </p>
+  </div>
+</div>
+
+</section>
     </article>
   );
 }
