@@ -1,22 +1,13 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import ProtectedPage from "@/components/ProtectedPage";
-
-
-
-const tagStyles: Record<string, string> = {
-  Growth: "bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-400",
-  Membership: "bg-blue-50 text-blue-700 dark:bg-blue-950/40 dark:text-blue-400",
-  Experimentation: "bg-amber-50 text-amber-700 dark:bg-amber-950/40 dark:text-amber-400",
-};
 
 export default function OnePageCheckoutCaseStudy() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <ProtectedPage correctPassword="checkout2024">
-      <article className="max-w-3xl mx-auto pb-20 space-y-10">
+    <article className="max-w-3xl mx-auto pb-20 space-y-10">
+
 
       {/* Breadcrumb */}
       <div>
@@ -43,7 +34,7 @@ export default function OnePageCheckoutCaseStudy() {
         <dl className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pt-6 text-sm">
 
           <div>
-            <dt className="text-xs uppercase tracking-[0.18em] text-neutral-500">
+            <dt className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
               Company
             </dt>
             <dd className="mt-2 text-neutral-900 dark:text-neutral-100">
@@ -52,7 +43,7 @@ export default function OnePageCheckoutCaseStudy() {
           </div>
 
           <div>
-            <dt className="text-xs uppercase tracking-[0.18em] text-neutral-500">
+            <dt className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
               Role
             </dt>
             <dd className="mt-2 text-neutral-900 dark:text-neutral-100">
@@ -61,7 +52,7 @@ export default function OnePageCheckoutCaseStudy() {
           </div>
 
           <div>
-            <dt className="text-xs uppercase tracking-[0.18em] text-neutral-500">
+            <dt className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
               Timeline
             </dt>
             <dd className="mt-2 text-neutral-900 dark:text-neutral-100 whitespace-nowrap">
@@ -844,9 +835,7 @@ export default function OnePageCheckoutCaseStudy() {
     </p>
   </div>
 </div>
-
 </section>
     </article>
-    </ProtectedPage>
   );
 }

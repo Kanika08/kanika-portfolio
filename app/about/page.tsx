@@ -34,7 +34,7 @@ export default function AboutPage() {
               href="https://www.zomato.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline underline-offset-4 decoration-neutral-300 hover:decoration-neutral-500 transition"
+              className="underline underline-offset-4 decoration-neutral-300 dark:decoration-neutral-700 hover:decoration-neutral-500 dark:hover:decoration-neutral-300 transition"
             >
               Zomato
             </a>{" "}
@@ -43,7 +43,7 @@ export default function AboutPage() {
               href="https://www.prodigygame.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline underline-offset-4 decoration-neutral-300 hover:decoration-neutral-500 transition"
+              className="underline underline-offset-4 decoration-neutral-300 dark:decoration-neutral-700 hover:decoration-neutral-500 dark:hover:decoration-neutral-300 transition"
             >
               Prodigy
             </a>
