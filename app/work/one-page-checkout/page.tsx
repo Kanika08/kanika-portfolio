@@ -13,7 +13,7 @@ export default function OnePageCheckoutCaseStudy() {
       <div>
         <Link
           href="/work"
-          className="text-sm text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 transition"
+          className="text-sm text-neutral-500 hover:text-black dark:text-neutral-400 dark:hover:text-white transition"
         >
           ← Work
         </Link>

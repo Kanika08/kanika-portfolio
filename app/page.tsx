@@ -27,7 +27,7 @@ export default function HomePage() {
 
         <Link
           href="mailto:kanika.vasudeva@gmail.com"
-          className="text-sm font-medium text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-neutral-100"
+          className="text-sm font-medium text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white"
         >
           Let&apos;s connect
         </Link>

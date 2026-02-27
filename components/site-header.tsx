@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect } from "react";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -11,6 +12,13 @@ const navItems = [
 
 export function SiteHeader() {
   const pathname = usePathname();
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const useDark = savedTheme ? savedTheme === "dark" : prefersDark;
+    document.documentElement.classList.toggle("dark", useDark);
+  }, []);
 
   const toggleTheme = () => {
     const root = document.documentElement;
@@ -48,7 +56,7 @@ export function SiteHeader() {
                 key={item.href}
                 href={item.href}
                 className={`relative pb-1 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400 dark:focus-visible:ring-neutral-600 rounded-sm ${
-                  isActive ? "text-neutral-900 dark:text-neutral-100" : "hover:text-neutral-900 dark:hover:text-neutral-100"
+                  isActive ? "text-neutral-900 dark:text-neutral-100" : "hover:text-black dark:hover:text-white"
                 }`}
               >
                 {item.label}
