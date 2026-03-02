@@ -16,8 +16,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kanika Mudhar",
-  description: "Senior Product Designer Portfolio",
+  title: "Kanika Mudhar | Senior Product Designer",
+  description:
+    "Systems-focused product designer building scalable, high-impact experiences across subscriptions, growth, and design systems.",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default function RootLayout({
