@@ -51,7 +51,7 @@ export default function AboutPage() {
           </p>
 
           <p>
-            I’m drawn to thoughtful systems — the structure behind the screens,
+            I’m drawn to thoughtful systems, the structure behind the screens,
             and the decisions that shape how something feels and functions over time.
             I care about clarity, collaboration, and building products that hold up as they grow.
           </p>
