@@ -11,18 +11,31 @@
 :root {
   --background: 250 250 250;
   --foreground: 10 10 10;
-  --foreground-primary: 38 38 38; /* #262626 premium charcoal */
+  --foreground-primary: 38 38 38;
+  --bg-card: 255 255 255;
 }
 
 .dark {
   --background: 10 10 10;
   --foreground: 250 250 250;
-  --foreground-primary: 245 245 245; /* softer white for dark mode */
+  --foreground-primary: 230 230 230;
+  --bg-card: 23 23 23;
 }
 
 body {
   background: rgb(var(--background));
   color: rgb(var(--foreground));
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: rgb(var(--foreground));
+}
+
+p {
+  color: rgb(var(--foreground-primary));
 }
 
 .text-primary {
@@ -45,11 +58,15 @@ html {
 }
 
 .card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
+  background: rgb(var(--bg-card));
+  border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 1.25rem;
   padding: 2rem;
   transition: all 0.3s ease;
+}
+
+.dark .card {
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .card:hover {
@@ -63,9 +80,14 @@ html {
   text-transform: uppercase;
   padding: 6px 12px;
   border-radius: 999px;
-  border: 1px solid var(--border-subtle);
-  color: var(--text-secondary);
-  background: #fafafa;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  color: rgb(var(--foreground-primary));
+  background: rgb(245 245 245);
+}
+
+.dark .tag {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgb(38 38 38);
 }
 
 .cta {

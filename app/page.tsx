@@ -7,7 +7,7 @@ export default function HomePage() {
         I design systems behind products people rely on every day.
       </h1>
 
-      <div className="mb-12 max-w-3xl space-y-5 text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+      <div className="mb-12 max-w-3xl space-y-5 text-sm md:text-base leading-relaxed">
         <p>
         Over 14+ years at Zomato and Prodigy, I’ve designed products used by millions—across mobile and web, from discovery and ordering to subscriptions and parent experiences.
         </p>
