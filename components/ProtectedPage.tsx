@@ -1,17 +1,28 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function ProtectedPage({
   correctPassword,
   children,
+  storageKey = "protected-case-study",
 }: {
   correctPassword: string;
   children: React.ReactNode;
+  storageKey?: string;
 }) {
   const [password, setPassword] = useState("");
   const [unlocked, setUnlocked] = useState(false);
   const [error, setError] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
+
+  // ✅ Restore unlock state on mount
+  useEffect(() => {
+    const saved = localStorage.getItem(storageKey);
+    if (saved === "true") {
+      setUnlocked(true);
+    }
+  }, [storageKey]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -19,6 +30,7 @@ export default function ProtectedPage({
     if (password === correctPassword) {
       setUnlocked(true);
       setError(false);
+      localStorage.setItem(storageKey, "true"); // ✅ Persist unlock
     } else {
       setError(true);
     }
@@ -26,49 +38,81 @@ export default function ProtectedPage({
 
   if (!unlocked) {
     return (
-      <div className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden bg-white dark:bg-neutral-950">
-        
-        {/* Gradient Blobs */}
-        <div className="absolute w-[500px] h-[500px] bg-purple-400/30 rounded-full blur-3xl -top-32 -left-32" />
-        <div className="absolute w-[400px] h-[400px] bg-pink-300/30 rounded-full blur-3xl bottom-0 right-0" />
+      <article className="max-w-3xl mx-auto pt-16 pb-20 px-6 space-y-8">
+        <div className="space-y-4">
+          <h1 className="text-3xl md:text-4xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+            Protected Case Study
+          </h1>
 
-        <div
-          className="relative max-w-md w-full space-y-8 bg-neutral-50/80 dark:bg-neutral-900/70 backdrop-blur-xl p-10 rounded-2xl border border-neutral-200 dark:border-neutral-800 shadow-sm"
-        >
-          <div className="space-y-4 text-center">
-            <h1 className="text-3xl md:text-4xl font-serif tracking-tight">
-              Protected Case Study
-            </h1>
-            <p className="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed">
-              This work is shared thoughtfully and requires permission to view.
-              If you have access, enter the password below.
-            </p>
-          </div>
+          <p className="text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
+            This work is not publicly available. If you have access, enter the password below.
+          </p>
 
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <p className="text-sm text-neutral-500 dark:text-neutral-400">
+            Don’t have access?{" "}
+            <a
+              href="mailto:your@email.com?subject=Request access to One Page Checkout case study"
+              className="underline underline-offset-4 hover:text-neutral-900 dark:hover:text-neutral-100 transition"
+            >
+              Email me for access
+            </a>
+          </p>
+        </div>
+
+        <form onSubmit={handleSubmit} className="space-y-4 max-w-xl">
+          <div className="relative">
             <input
-              type="password"
+              type={showPassword ? "text" : "password"}
               placeholder="Enter password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-4 py-3 rounded-xl border border-neutral-300 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
+              className="
+                w-full px-4 py-3 pr-16 rounded-xl
+                border border-neutral-300 dark:border-neutral-700
+                bg-white dark:bg-neutral-950
+                text-neutral-900 dark:text-neutral-100
+                focus:outline-none
+                focus:ring-1 focus:ring-neutral-900 dark:focus:ring-neutral-100
+                transition
+              "
             />
 
-            {error && (
-              <p className="text-sm text-red-500">
-                That password isn’t quite right.
-              </p>
-            )}
-
             <button
-              type="submit"
-              className="w-full py-3 rounded-xl bg-purple-700 text-white font-medium shadow-md hover:bg-purple-800 transition"
+              type="button"
+              onClick={() => setShowPassword(!showPassword)}
+              className="
+                absolute right-4 top-1/2 -translate-y-1/2
+                text-sm text-neutral-500
+                hover:text-neutral-900 dark:hover:text-neutral-100
+                transition
+              "
             >
-              Unlock Case Study
+              {showPassword ? "Hide" : "Show"}
             </button>
-          </form>
-        </div>
-      </div>
+          </div>
+
+          {error && (
+            <p className="text-sm text-red-500">
+              Incorrect password.
+            </p>
+          )}
+
+          <button
+            type="submit"
+            className="
+              w-full py-3 rounded-xl
+              bg-neutral-900 text-white
+              dark:bg-white dark:text-neutral-900
+              font-medium
+              hover:opacity-90
+              active:scale-[0.99]
+              transition
+            "
+          >
+            Unlock Case Study
+          </button>
+        </form>
+      </article>
     );
   }
 

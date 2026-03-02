@@ -1,12 +1,21 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import ProtectedPage from "@/components/ProtectedPage";
+
+
+
+
 
 export default function OnePageCheckoutCaseStudy() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <article className="max-w-3xl mx-auto pb-20 space-y-10">
+<ProtectedPage
+  correctPassword="prodigy2025"
+  storageKey="one-page-checkout-access"
+>
+<article className="max-w-3xl mx-auto pb-20 space-y-10">
 
 
       {/* Breadcrumb */}
@@ -836,6 +845,7 @@ export default function OnePageCheckoutCaseStudy() {
   </div>
 </div>
 </section>
-    </article>
+    </article>   
+    </ProtectedPage>
   );
 }
