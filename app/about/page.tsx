@@ -68,24 +68,24 @@ export default function AboutPage() {
           {/* CTA */}
           <div className="flex items-center gap-10 pt-4">
 
-            {/* Resume */}
-            <a
-              href="/Kanika_Mudhar_Product_Designer_Resume_2026.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm font-medium text-neutral-900 dark:text-neutral-100 hover:text-neutral-700 dark:hover:text-white transition-colors"
-            >
-              Resume
-              <HiExternalLink className="w-4 h-4 opacity-80" />
+     {/* Resume */}
+<a
+  href="/Kanika_Mudhar_Product_Designer_Resume_2026.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center gap-2 text-sm font-medium btn-secondary"
+>
+  Resume
+  <HiExternalLink className="w-4 h-4" />
 </a>
 
-            {/* Email */}
-            <a
-              href="mailto:kanika.vasudeva@gmail.com"
-              className="inline-flex items-center gap-2 text-sm font-medium text-neutral-900 dark:text-neutral-100 hover:text-neutral-700 dark:hover:text-white transition-colors"
-            >
+{/* Email */}
+<a
+  href="mailto:kanika.vasudeva@gmail.com"
+  className="inline-flex items-center gap-2 text-sm font-medium btn-secondary"
+>
   Get in touch
-  <HiMail className="w-4 h-4 opacity-80" />
+  <HiMail className="w-4 h-4" />
 </a>
 
           </div>

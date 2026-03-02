@@ -47,10 +47,10 @@ export function SiteHeader() {
             KM
           </div>
           <div className="flex flex-col leading-tight">
-            <span className="text-sm md:text-base font-medium tracking-tight text-primary">
-              Kanika Mudhar
-            </span>
-            <span className="text-[11px] uppercase tracking-[0.22em] text-neutral-500 dark:text-neutral-400">
+          <span className="text-sm md:text-base font-medium tracking-tight text-neutral-900 dark:text-neutral-100">
+  Kanika Mudhar
+</span>
+            <span className="text-[11px] uppercase tracking-[0.22em] text-neutral-500 dark:text-neutral-300">
               Senior Product Designer
             </span>
           </div>

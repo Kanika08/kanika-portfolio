@@ -90,6 +90,23 @@ html {
   background: rgb(38 38 38);
 }
 
+.btn-secondary {
+  color: rgb(64 64 64);
+  transition: color 0.2s ease;
+}
+
+.btn-secondary:hover {
+  color: rgb(23 23 23);
+}
+
+.dark .btn-secondary {
+  color: rgb(229 229 229);
+}
+
+.dark .btn-secondary:hover {
+  color: rgb(245 245 245);
+}
+
 .cta {
   font-weight: 500;
   color: var(--accent);
