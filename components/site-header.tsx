@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -12,21 +12,32 @@ const navItems = [
 
 export function SiteHeader() {
   const pathname = usePathname();
+  const [mounted, setMounted] = useState(false);
+  const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const useDark = savedTheme ? savedTheme === "dark" : prefersDark;
-    document.documentElement.classList.toggle("dark", useDark);
+    queueMicrotask(() => {
+      setMounted(true);
+      setIsDark(document.documentElement.classList.contains("dark"));
+    });
   }, []);
 
   const toggleTheme = () => {
     const root = document.documentElement;
-    const isDarkNow = root.classList.contains("dark");
-    const nextTheme = isDarkNow ? "light" : "dark";
-    root.classList.toggle("dark", nextTheme === "dark");
-    localStorage.setItem("theme", nextTheme);
+    const nextIsDark = !isDark;
+
+    if (nextIsDark) {
+      root.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      root.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+
+    setIsDark(nextIsDark);
   };
+
+  if (!mounted) return null;
 
   return (
     <header className="sticky top-0 z-30 border-b border-neutral-200/80 dark:border-neutral-800/80 bg-white/80 dark:bg-neutral-950/80 backdrop-blur-md">
@@ -72,19 +83,35 @@ export function SiteHeader() {
             className="ml-2 p-1.5 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400 dark:focus-visible:ring-neutral-600 transition-colors"
             aria-label="Toggle theme"
           >
-            <svg
-              className="h-4 w-4 text-neutral-600 dark:text-neutral-400"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={1.5}
-                d="M12 3v1m0 16v1m9-9h-1M4 12H3m14.364 6.364l-.707-.707M6.343 6.343l-.707-.707M18.364 5.636l-.707.707M6.343 17.657l-.707.707M12 16a4 4 0 100-8 4 4 0 000 8z"
-              />
-            </svg>
+            {isDark ? (
+              <svg
+                className="h-4 w-4 text-neutral-600 dark:text-neutral-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={1.5}
+                  d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                />
+              </svg>
+            ) : (
+              <svg
+                className="h-4 w-4 text-neutral-600 dark:text-neutral-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={1.5}
+                  d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                />
+              </svg>
+            )}
           </button>
         </nav>
       </div>

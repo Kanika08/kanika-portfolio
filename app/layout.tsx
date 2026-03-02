@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { SiteHeader } from "../components/site-header";
 import { SiteFooter } from "../components/site-footer";
@@ -14,16 +15,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const themeInitScript = `(() => {
-  try {
-    const storedTheme = localStorage.getItem("theme");
-    const root = document.documentElement;
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const useDark = storedTheme ? storedTheme === "dark" : prefersDark;
-    root.classList.toggle("dark", useDark);
-  } catch (_) {}
-})();`;
-
 export const metadata: Metadata = {
   title: "Kanika Mudhar",
   description: "Senior Product Designer Portfolio",
@@ -37,7 +28,20 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+        <Script id="theme-init" strategy="beforeInteractive">
+          {`(function () {
+            try {
+              var savedTheme = localStorage.getItem("theme");
+              var systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+              if (savedTheme === "dark" || (!savedTheme && systemDark)) {
+                document.documentElement.classList.add("dark");
+              } else {
+                document.documentElement.classList.remove("dark");
+              }
+            } catch (_) {}
+          })();`}
+        </Script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} bg-white text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100 transition-colors duration-300 antialiased`}
