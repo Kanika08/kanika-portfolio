@@ -22,7 +22,7 @@ export function SiteFooter() {
             {/* Email */}
             <a
               href="mailto:kanika.vasudeva@gmail.com"
-              className="flex items-center gap-2 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
+              className="flex items-center gap-2 text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition"
             >
              <HiMail className="h-4 w-4 opacity-70" />
 
@@ -34,7 +34,7 @@ export function SiteFooter() {
               href="https://www.linkedin.com/in/kanikamudhar/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
+              className="flex items-center gap-2 text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition"
             >
               <FaLinkedinIn className="h-4 w-4 opacity-70" />
               LinkedIn
@@ -45,7 +45,7 @@ export function SiteFooter() {
               href="https://medium.com/@kanikavasudeva"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
+              className="flex items-center gap-2 text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition"
             >
               <FaMediumM className="h-4 w-4 opacity-70" />
               Medium
