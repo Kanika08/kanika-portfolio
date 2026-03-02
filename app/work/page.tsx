@@ -63,7 +63,6 @@ const caseStudies = [
     summary:
       "Redesigned Prodigy’s parent insights experience by replacing vanity metrics with actionable learning signals. Increased app engagement by 2.56% and drove a 34% lift in retention.",
     tags: ["Engagement", "Mobile app design", "Systems thinking"],
-    readTime: "Case study in progress",
     image: "/images/cover_parent_insights.png", 
     imageBg: "bg-[#EAF7F2] dark:bg-neutral-900",
     cta: "Case study in progress 🔒",
@@ -76,7 +75,6 @@ const caseStudies = [
     summary:
       "Designed a subscription experience that balanced restaurant constraints, user value, and growth strategy—aligning incentives across a complex ecosystem.",
     tags: ["Subscription", "Mobile app design", "Growth systems"],
-    readTime: "Medium article",
     image: "/images/cover_zomato_gold.png",
     imageBg: "bg-[#F3E8FF] dark:bg-neutral-900",
     cta: "View case study on Medium ↗",
@@ -89,7 +87,6 @@ const caseStudies = [
     summary:
       "Developed a scalable design system that improved cross-team consistency and increased velocity across product teams.",
     tags: ["Design system", "Scale", "Cross-functional"],
-    readTime: "Medium article",
     image: "/images/cover_zomato_design_system.png",
     imageBg: "bg-[#FFF1E6] dark:bg-neutral-900",
     cta: "View case study on Medium ↗",
@@ -105,9 +102,7 @@ export default function WorkPage() {
         </h1>
 
         <p className="mt-3 max-w-2xl text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
-          Systems-focused work across subscriptions, experimentation, and design
-          foundations—focused on clarity, measurable outcomes, and products that
-          scale with intention.
+        Design work across subscriptions, growth, and systems, built with clarity, measurable impact, and long-term scalability in mind.
         </p>
       </div>
 
