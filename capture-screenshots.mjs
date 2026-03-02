@@ -12,7 +12,7 @@ const baseDir = path.resolve(__dirname);
 const lightPath = path.join(baseDir, "light-home.png");
 const darkPath = path.join(baseDir, "dark-home.png");
 
-const url = "http://127.0.0.1:3000";
+const url = process.env.BASE_URL || "http://127.0.0.1:3000";
 
 async function main() {
   const browser = await chromium.launch({ headless: true });
