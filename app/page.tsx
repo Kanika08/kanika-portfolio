@@ -19,7 +19,7 @@ export default function HomePage() {
       <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
         <Link
           href="/work"
-          className="inline-flex items-center gap-2 rounded-full bg-neutral-900 dark:bg-neutral-100 px-5 py-2.5 text-sm font-medium text-white dark:text-neutral-900 shadow-sm transition hover:bg-neutral-800 dark:hover:opacity-90"
+          className="inline-flex items-center gap-2 rounded-full bg-neutral-900 dark:bg-neutral-100 px-5 py-2.5 text-sm font-medium text-white dark:text-neutral-900 shadow-sm transition hover:bg-neutral-800 dark:hover:bg-neutral-200"
         >
           View product case studies
           <span className="text-base">→</span>
@@ -27,7 +27,7 @@ export default function HomePage() {
 
         <Link
           href="mailto:kanika.vasudeva@gmail.com"
-          className="text-sm font-medium text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white"
+          className="text-sm font-medium text-neutral-600 dark:text-neutral-200 hover:text-neutral-900 dark:hover:text-white"
         >
           Let&apos;s connect
         </Link>

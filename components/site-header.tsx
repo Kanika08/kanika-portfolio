@@ -40,7 +40,7 @@ export function SiteHeader() {
   if (!mounted) return null;
 
   return (
-    <header className="sticky top-0 z-30 border-b border-black/5 dark:border-white/5 bg-white/70 dark:bg-neutral-950/70 backdrop-blur-xl transition-colors">
+    <header className="sticky top-0 z-30 border-b border-black/5 dark:border-white/5 bg-white dark:bg-neutral-950 backdrop-blur-xl transition-colors">
       <div className="max-w-6xl mx-auto px-6 md:px-10 py-4 md:py-5 flex items-center justify-between gap-6">
         <Link href="/" className="flex items-center gap-3">
           <div className="h-8 w-8 rounded-full bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 flex items-center justify-center text-xs font-semibold">
@@ -56,7 +56,7 @@ export function SiteHeader() {
           </div>
         </Link>
 
-        <nav className="flex items-center gap-6 md:gap-8 text-xs md:text-sm text-neutral-600 dark:text-neutral-300">
+        <nav className="flex items-center gap-6 md:gap-8 text-xs md:text-sm text-neutral-600 dark:text-neutral-400">
           {navItems.map((item) => {
             const isActive =
               pathname === item.href ||
