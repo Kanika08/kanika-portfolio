@@ -51,10 +51,10 @@ export default function ProtectedPage({
           <p className="text-sm text-neutral-500 dark:text-neutral-400">
             Don’t have access?{" "}
             <a
-              href="mailto:your@email.com?subject=Request access to One Page Checkout case study"
+              href="mailto:kanikavasudeva8@gmail.com?subject=Request access to One Page Checkout case study"
               className="underline underline-offset-4 hover:text-neutral-900 dark:hover:text-neutral-100 transition"
             >
-              Email me for access
+              Request access
             </a>
           </p>
         </div>
