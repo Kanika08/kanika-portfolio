@@ -26,7 +26,7 @@ export default function AboutPage() {
         </div>
 
         {/* Body Copy */}
-        <div className="space-y-6 text-sm md:text-base text-neutral-700 dark:text-neutral-300 leading-relaxed">
+        <div className="space-y-6 text-sm md:text-base text-neutral-700 dark:text-neutral-400 leading-relaxed">
 
           <p>
             I’m a product designer with over 14 years of experience building digital products across food tech and education. I’ve worked at{" "}

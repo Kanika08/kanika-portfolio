@@ -1,24 +1,24 @@
 import Link from "next/link";
 const tagStyles: Record<string, string> = {
   // Growth / Experiment
-  "Experimentation": "bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300",
-  "Growth design": "bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300",
-  "Growth systems": "bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300",
+  "Experimentation": "bg-blue-50 text-blue-700 dark:bg-neutral-800 dark:text-neutral-200",
+  "Growth design": "bg-blue-50 text-blue-700 dark:bg-neutral-800 dark:text-neutral-200",
+  "Growth systems": "bg-blue-50 text-blue-700 dark:bg-neutral-800 dark:text-neutral-200",
 
   // Subscription / Marketplace
-  "Subscription": "bg-purple-50 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300",
-  "Membership": "bg-purple-50 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300",
-  "Marketplace": "bg-purple-50 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300",
+  "Subscription": "bg-purple-50 text-purple-700 dark:bg-neutral-800 dark:text-neutral-200",
+  "Membership": "bg-purple-50 text-purple-700 dark:bg-neutral-800 dark:text-neutral-200",
+  "Marketplace": "bg-purple-50 text-purple-700 dark:bg-neutral-800 dark:text-neutral-200",
 
   // Systems / Design foundations
-  "Systems thinking": "bg-emerald-50 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300",
-  "Design system": "bg-emerald-50 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300",
-  "Scale": "bg-emerald-50 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300",
-  "Cross-functional": "bg-emerald-50 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300",
+  "Systems thinking": "bg-emerald-50 text-emerald-700 dark:bg-neutral-800 dark:text-neutral-200",
+  "Design system": "bg-emerald-50 text-emerald-700 dark:bg-neutral-800 dark:text-neutral-200",
+  "Scale": "bg-emerald-50 text-emerald-700 dark:bg-neutral-800 dark:text-neutral-200",
+  "Cross-functional": "bg-emerald-50 text-emerald-700 dark:bg-neutral-800 dark:text-neutral-200",
 
   // Engagement / Info
-  "Engagement": "bg-amber-50 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300",
-  "Information design": "bg-amber-50 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300",
+  "Engagement": "bg-amber-50 text-amber-700 dark:bg-neutral-800 dark:text-neutral-200",
+  "Information design": "bg-amber-50 text-amber-700 dark:bg-neutral-800 dark:text-neutral-200",
 };
 const caseStudies = [
   {
@@ -38,7 +38,7 @@ const caseStudies = [
     tags: ["Experimentation", "Membership", "Growth design"],
     readTime: "8 min read",
     image: "/images/cover-one-page-checkout.png", 
-    imageBg: "bg-[#E6F0FF] dark:bg-neutral-800",
+    imageBg: "bg-[#E6F0FF] dark:bg-neutral-900",
   },
   {
     href: "/work/parent-insights",
@@ -48,7 +48,7 @@ const caseStudies = [
       "Turned raw curriculum progress into an opinionated insights layer that helps parents understand impact, build trust, and stay engaged over time.",
     tags: ["Engagement", "Information design", "Systems thinking"],
     readTime: "6 min read",
-    imageBg: "bg-[#EAF7F2] dark:bg-neutral-800",
+    imageBg: "bg-[#EAF7F2] dark:bg-neutral-900",
   },
   {
     href: "/work/zomato-gold",
@@ -58,7 +58,7 @@ const caseStudies = [
       "Designed a subscription experience that balanced restaurant constraints, user value, and growth strategy—aligning incentives across a complex marketplace.",
     tags: ["Subscription", "Marketplace", "Growth systems"],
     readTime: "5 min read",
-    imageBg: "bg-[#F3E8FF] dark:bg-neutral-800",
+    imageBg: "bg-[#F3E8FF] dark:bg-neutral-900",
   },
   {
     href: "/work/design-system",
@@ -68,7 +68,7 @@ const caseStudies = [
       "Established a reusable component architecture and governance model that increased velocity while preserving craft across multiple product teams.",
     tags: ["Design system", "Scale", "Cross-functional"],
     readTime: "7 min read",
-    imageBg: "bg-[#FFF1E6] dark:bg-neutral-800",
+    imageBg: "bg-[#FFF1E6] dark:bg-neutral-900",
   },
 ];
 
@@ -147,7 +147,7 @@ export default function WorkPage() {
                       key={tag}
                       className={`
                         text-xs px-2.5 py-1 rounded-md
-                        ${tagStyles[tag] || "bg-neutral-100 text-neutral-600 dark:bg-neutral-800 dark:text-neutral-300"}
+                        ${tagStyles[tag] || "bg-neutral-100 text-neutral-600 dark:bg-neutral-800 dark:text-neutral-200"}
                       `}
                     >
                       {tag}

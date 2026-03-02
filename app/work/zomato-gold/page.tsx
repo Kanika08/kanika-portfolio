@@ -86,7 +86,7 @@ export default function ZomatoGoldCaseStudy() {
             Impact
           </h3>
 
-          <ul className="space-y-2 text-sm md:text-base text-neutral-700 dark:text-neutral-300 list-disc pl-5">
+          <ul className="space-y-2 text-sm md:text-base text-neutral-700 dark:text-neutral-400 list-disc pl-5">
             <li>200,000+ memberships in first 8 months</li>
             <li>40% of sales driven by referrals</li>
             <li>3x increase in traffic for Gold restaurants</li>
@@ -120,7 +120,7 @@ export default function ZomatoGoldCaseStudy() {
         </h2>
 
         <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 px-6 py-6 space-y-3">
-          <ul className="space-y-2 text-sm md:text-base text-neutral-700 dark:text-neutral-300 list-disc pl-5">
+          <ul className="space-y-2 text-sm md:text-base text-neutral-700 dark:text-neutral-400 list-disc pl-5">
             <li>Create a premium & exclusive experience</li>
             <li>Build trust through clear communication</li>
             <li>Make Gold restaurants easy to discover</li>
@@ -188,13 +188,13 @@ export default function ZomatoGoldCaseStudy() {
         </h2>
 
         <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 px-6 py-6 space-y-3">
-          <p className="text-sm md:text-base text-neutral-700 dark:text-neutral-300 leading-relaxed">
+          <p className="text-sm md:text-base text-neutral-700 dark:text-neutral-400 leading-relaxed">
             Subscriptions are trust products before they are feature products.
           </p>
-          <p className="text-sm md:text-base text-neutral-700 dark:text-neutral-300 leading-relaxed">
+          <p className="text-sm md:text-base text-neutral-700 dark:text-neutral-400 leading-relaxed">
             Communication design directly impacts revenue.
           </p>
-          <p className="text-sm md:text-base text-neutral-700 dark:text-neutral-300 leading-relaxed">
+          <p className="text-sm md:text-base text-neutral-700 dark:text-neutral-400 leading-relaxed">
             Reducing anxiety increases conversion.
           </p>
           <p className="text-sm md:text-base font-medium text-neutral-900 dark:text-neutral-100 leading-relaxed">

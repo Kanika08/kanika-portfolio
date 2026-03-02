@@ -183,7 +183,7 @@ export default function OnePageCheckoutCaseStudy() {
         <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
           The brief was intentionally open:
         </p>
-        <blockquote className="border-l-2 border-neutral-300 dark:border-neutral-700 pl-4 italic text-sm md:text-base text-neutral-700 dark:text-neutral-300 max-w-2xl">
+        <blockquote className="border-l-2 border-neutral-300 dark:border-neutral-800 pl-4 italic text-sm md:text-base text-neutral-700 dark:text-neutral-400 max-w-2xl">
           &quot;Reduce checkout friction and improve conversion.&quot;
         </blockquote>
         <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
@@ -471,7 +471,7 @@ export default function OnePageCheckoutCaseStudy() {
             <div className="text-xs font-medium text-neutral-500 dark:text-neutral-400">
               Target users
             </div>
-            <ul className="space-y-1 text-sm md:text-base text-neutral-700 dark:text-neutral-300 list-disc pl-4">
+            <ul className="space-y-1 text-sm md:text-base text-neutral-700 dark:text-neutral-400 list-disc pl-4">
               <li>Parents purchasing a new membership for their child</li>
               <li>Users entering from the Math Game membership landing page</li>
               <li>Excludes existing members</li>
@@ -496,7 +496,7 @@ export default function OnePageCheckoutCaseStudy() {
                 <div className="text-xs font-medium uppercase tracking-wide text-neutral-400 dark:text-neutral-500">
                   Secondary
                 </div>
-                <ul className="space-y-1 text-sm md:text-base text-neutral-700 dark:text-neutral-300 list-disc pl-4">
+                <ul className="space-y-1 text-sm md:text-base text-neutral-700 dark:text-neutral-400 list-disc pl-4">
                   <li>Time to checkout</li>
                   <li>Click-through rate</li>
                 </ul>
@@ -784,7 +784,7 @@ export default function OnePageCheckoutCaseStudy() {
     <h3 className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
       Early directional signal
     </h3>
-    <p className="text-sm md:text-base text-neutral-700 dark:text-neutral-300 leading-relaxed">
+    <p className="text-sm md:text-base text-neutral-700 dark:text-neutral-400 leading-relaxed">
       The experiment remained within its evaluation window at the time of my departure.
       Early data indicated a positive directional lift in conversion, with no
       technical regressions or negative behavioral signals observed.
@@ -821,7 +821,7 @@ export default function OnePageCheckoutCaseStudy() {
     <h3 className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
       Strategic impact
     </h3>
-    <ul className="space-y-2 text-sm md:text-base text-neutral-700 dark:text-neutral-300 list-disc pl-5">
+    <ul className="space-y-2 text-sm md:text-base text-neutral-700 dark:text-neutral-400 list-disc pl-5">
       <li>Repositioned clarity as a measurable growth lever</li>
       <li>Aligned stakeholders around evidence over intuition</li>
       <li>Balanced speed with transparency to support long-term value</li>
