@@ -22,16 +22,16 @@ async function main() {
   });
   const page = await context.newPage();
 
-  await page.goto(url, { waitUntil: "networkidle" });
-  await page.waitForTimeout(500);
+  await page.goto(url, { waitUntil: "load", timeout: 15000 });
+  await page.waitForTimeout(800);
 
   // Force light mode
   await page.evaluate(() => {
     document.documentElement.classList.remove("dark");
     localStorage.setItem("theme", "light");
   });
-  await page.reload({ waitUntil: "networkidle" });
-  await page.waitForTimeout(500);
+  await page.reload({ waitUntil: "load", timeout: 15000 });
+  await page.waitForTimeout(800);
 
   await page.screenshot({ path: lightPath, fullPage: true });
   console.log("Saved:", lightPath);
