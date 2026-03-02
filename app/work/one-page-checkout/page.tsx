@@ -121,53 +121,34 @@ export default function OnePageCheckoutCaseStudy() {
         </p>
       </section>
 
-      {/* Checkout flow video */}
-      <section className="space-y-3">
-        <div className="flex justify-center">
-          <div className="w-full max-w-2xl">
-            <div className="rounded-[24px] border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-900 p-2">
-              <div className="rounded-[16px] overflow-hidden bg-black">
-                <video
-                  className="w-full h-auto block"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  controls
-                >
-                  <source
-                    src="/videos/current-checkout-flow.mp4"
-                    type="video/mp4"
-                  />
-                </video>
-              </div>
-            </div>
-            <p className="mt-3 text-xs text-neutral-500 dark:text-neutral-400">
-              Current checkout flow &middot; 7 steps
-            </p>
-          </div>
-        </div>
-      </section>
+{/* Flowchart */}
+<section className="space-y-6">
 
-      {/* Flowchart image */}
-<section className="space-y-3">
-  <div className="flex justify-center">
-    <div className="w-full max-w-2xl">
-      <div
-        className="rounded-xl border border-neutral-200 dark:border-neutral-800 overflow-hidden cursor-zoom-in"
-        onClick={() => setIsOpen(true)}
-      >
-        <img
-          src="/images/checkout-flowchart.png"
-          alt="Checkout flow diagram showing 7 steps"
-          className="w-full h-auto block transition-transform duration-300 hover:scale-[1.02]"
-        />
-      </div>
-      <p className="mt-3 text-xs text-neutral-500 dark:text-neutral-400">
-        Checkout flow structure showing step-by-step progression
-      </p>
-    </div>
+  {/* Text column (narrow, readable) */}
+  <div className="max-w-2xl">
+    <h3 className="text-lg font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+      Checkout Flow Structure
+    </h3>
+
+    <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">
+      The existing purchase journey spans seven discrete steps, introducing
+      friction through repeated review states and account creation before confirmation.
+    </p>
   </div>
+
+  {/* Wide visual container */}
+  <div className="mx-auto w-full max-w-6xl">
+  <div
+    className="rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden cursor-zoom-in transition-colors hover:border-neutral-400"
+    onClick={() => setIsOpen(true)}
+  >
+    <img
+      src="/images/checkout-flowchart.png"
+      alt="Checkout flow diagram showing 7 steps"
+      className="w-full h-auto block"
+    />
+  </div>
+</div>
 
   {/* Modal */}
   {isOpen && (
@@ -178,11 +159,50 @@ export default function OnePageCheckoutCaseStudy() {
       <img
         src="/images/checkout-flowchart.png"
         alt="Expanded checkout flow diagram"
-        className="max-w-[95%] max-h-[90%] rounded-lg shadow-2xl"
+        className="max-w-[95%] max-h-[90%] rounded-xl shadow-2xl"
       />
     </div>
   )}
+
 </section>
+     
+ {/* Current Checkout Flow */}
+<div className="space-y-4">
+  <h3 className="text-lg font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+    Current Checkout Flow
+  </h3>
+
+  <p className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
+    Existing multi-step checkout experience requiring 7 screens to complete
+    a membership purchase.
+  </p>
+
+  <div className="mx-auto max-w-5xl flex flex-col items-center">
+    <div className="w-full rounded-t-2xl bg-[#1a1a1a] p-2 pb-4 shadow-2xl shadow-black/20">
+      <div className="mx-auto mb-2 h-1 w-12 rounded-full bg-[#2a2a2a]" />
+
+      <div className="overflow-hidden rounded-lg bg-black">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          controls
+          className="w-full h-auto block"
+        >
+          <source
+            src="/videos/current-checkout-flow.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+    </div>
+
+    <div className="h-2 w-[108%] rounded-b-xl bg-gradient-to-b from-[#d1d1d1] to-[#bdbdbd] shadow-md" />
+  </div>
+</div>
+
+
 
       {/* My Role & Approach */}
       <section className="space-y-4">
@@ -379,44 +399,73 @@ export default function OnePageCheckoutCaseStudy() {
         </div>
       </section>
 
-      {/* Stakeholder alignment */}
-<section className="space-y-6">
-  <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
-    When stakeholder intuition diverged from exploration
+{/* Stakeholder alignment */}
+<section className="space-y-8">
+
+  {/* Header sits above the grid */}
+  <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100 max-w-3xl">
+    Aligning through disagreement
   </h2>
 
-  <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-start">
+  {/* Grid starts at paragraph level */}
+  <div className="grid md:grid-cols-[1.1fr_0.9fr] gap-16 items-start">
 
-    {/* Left — Text */}
-    <div className="flex-1 space-y-4 max-w-xl">
-      <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+    {/* Left column */}
+    <div className="space-y-6 max-w-lg">
+
+      <p className="text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
         During early design reviews, leadership pushed to test a single-page checkout,
-        influenced by competitor experiences that appeared shorter at a glance.
-      </p>
-
-      <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+        influenced by competitor experiences.
         Given the low cost of experimentation and clear success metrics, I supported
         this direction as a fast validation, while flagging risks around value clarity
         and price control.
       </p>
+
+      <p className="text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+        The difference wasn’t just layout. It was purchase context.
+      </p>
+
+      <div className="border-l border-neutral-200 dark:border-neutral-800 pl-6 space-y-6">
+
+      <div>
+  <div className="text-xs uppercase tracking-[0.18em] text-neutral-600 dark:text-neutral-300 mb-2">
+    IXL
+  </div>
+  <p className="text-sm text-neutral-700 dark:text-neutral-300 leading-relaxed">
+    Intent-driven purchase. Users arrive specifically to transact.
+    The surface is primarily optimized for speed and completion.
+  </p>
+</div>
+
+<div>
+  <div className="text-xs uppercase tracking-[0.18em] text-neutral-600 dark:text-neutral-300 mb-2">
+    Prodigy
+  </div>
+  <p className="text-sm text-neutral-700 dark:text-neutral-300 leading-relaxed">
+    Membership is often discovered within gameplay. The checkout surface
+    must communicate value, reinforce differentiation, and build pricing
+    confidence — not just enable payment.
+  </p>
+</div>
+
+      </div>
+
     </div>
 
-    {/* Right — Image with subtle shadow (no box, no caption) */}
-    <div className="flex-shrink-0">
+    {/* Right column */}
+    <div className="space-y-3">
       <img
         src="/images/competitor-single-page-checkout.png"
-        alt="Competitor checkout pattern"
-        className="
-          block
-          w-[420px]
-          h-auto
-          drop-shadow-[0_20px_40px_rgba(0,0,0,0.12)]
-          dark:drop-shadow-[0_20px_40px_rgba(0,0,0,0.5)]
-        "
+        alt="IXL checkout page"
+        className="w-full h-auto block"
       />
+      <p className="text-xs text-neutral-500 dark:text-neutral-400">
+        IXL checkout page
+      </p>
     </div>
 
   </div>
+
 </section>
 
       {/* Hypothesis */}
