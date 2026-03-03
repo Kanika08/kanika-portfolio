@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://kanikamudhar.com
+
+# Sitemaps
+Sitemap: https://kanikamudhar.com/sitemap.xml

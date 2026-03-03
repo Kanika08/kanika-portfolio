@@ -15,9 +15,38 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kanika Mudhar | Senior Product Designer",
+  metadataBase: new URL("https://yourdomain.com"),
+
+  title: {
+    default: "Kanika Mudhar – Senior Product Designer in Toronto",
+    template: "%s | Kanika Mudhar",
+  },
+
   description:
-    "Systems-focused product designer building scalable, high-impact experiences across subscriptions, growth, and design systems.",
+    "Kanika Mudhar (Kanika Vasudeva) is a Senior Product Designer in Toronto specializing in growth experiments, checkout optimization, and scalable systems.",
+
+  keywords: [
+    "Kanika Mudhar",
+    "Kanika Vasudeva",
+    "Senior Product Designer Toronto",
+    "UX Designer Canada",
+  ],
+
+  authors: [{ name: "Kanika Mudhar" }],
+
+  alternates: {
+    canonical: "/",
+  },
+
+  openGraph: {
+    title: "Kanika Mudhar – Senior Product Designer",
+    description:
+      "Portfolio of Kanika Mudhar (Kanika Vasudeva), Senior Product Designer focused on growth and experimentation.",
+    url: "https://yourdomain.com",
+    siteName: "Kanika Mudhar Portfolio",
+    type: "website",
+  },
+
   icons: {
     icon: "/icon.png",
   },
@@ -44,6 +73,28 @@ export default function RootLayout({
 
           <SiteFooter />
         </div>
+
+        {/* 👇 ADD THIS RIGHT HERE */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Kanika Mudhar",
+              alternateName: "Kanika Vasudeva",
+              jobTitle: "Senior Product Designer",
+              url: "https://yourdomain.com",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Toronto",
+                addressCountry: "Canada",
+              },
+            }),
+          }}
+        />
+        {/* 👆 END ADD */}
+        
       </body>
     </html>
   );
