@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://yourdomain.com"),
+  metadataBase: new URL("https://kanikamudhar.com"),
 
   title: {
     default: "Kanika Mudhar – Senior Product Designer in Toronto",
@@ -42,9 +42,13 @@ export const metadata: Metadata = {
     title: "Kanika Mudhar – Senior Product Designer",
     description:
       "Portfolio of Kanika Mudhar (Kanika Vasudeva), Senior Product Designer focused on growth and experimentation.",
-    url: "https://yourdomain.com",
+    url: "https://kanikamudhar.com",
     siteName: "Kanika Mudhar Portfolio",
     type: "website",
+  },
+
+  verification: {
+    google: "8Mh7J0p08reM3t_ScgKBp2xqcaoSYZkMAKP_nszQ9KM",
   },
 
   icons: {
