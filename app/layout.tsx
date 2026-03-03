@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -78,7 +79,7 @@ export default function RootLayout({
           <SiteFooter />
         </div>
 
-        {/* 👇 ADD THIS RIGHT HERE */}
+        {/* Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -88,7 +89,7 @@ export default function RootLayout({
               name: "Kanika Mudhar",
               alternateName: "Kanika Vasudeva",
               jobTitle: "Senior Product Designer",
-              url: "https://yourdomain.com",
+              url: "https://kanikamudhar.com",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Toronto",
@@ -97,8 +98,9 @@ export default function RootLayout({
             }),
           }}
         />
-        {/* 👆 END ADD */}
-        
+
+        {/* Vercel Analytics */}
+        <Analytics />
       </body>
     </html>
   );

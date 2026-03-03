@@ -26,7 +26,7 @@ export function SiteHeader() {
               Kanika Mudhar
             </span>
             <span className="text-[11px] uppercase tracking-[0.22em] text-neutral-500">
-              Senior Product Designer
+              Product Designer
             </span>
           </div>
         </Link>
