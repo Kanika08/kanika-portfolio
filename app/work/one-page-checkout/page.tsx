@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import ProtectedPage from "@/components/ProtectedPage";
 
@@ -9,6 +9,23 @@ import ProtectedPage from "@/components/ProtectedPage";
 
 export default function OnePageCheckoutCaseStudy() {
   const [isOpen, setIsOpen] = useState(false);
+  const [zoomImage, setZoomImage] = useState<string | null>(null);
+
+  useEffect(() => {
+    const handleEsc = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setZoomImage(null);
+      }
+    };
+
+    if (zoomImage) {
+      window.addEventListener("keydown", handleEsc);
+    }
+
+    return () => {
+      window.removeEventListener("keydown", handleEsc);
+    };
+  }, [zoomImage]);
 
   return (
 <ProtectedPage
@@ -289,7 +306,8 @@ export default function OnePageCheckoutCaseStudy() {
               <img
                 src="/images/concept-1.png"
                 alt="Concept 1 — Reduce decision making at checkout"
-                className="w-full h-auto rounded-lg border border-neutral-200 dark:border-neutral-800"
+                onClick={() => setZoomImage("/images/concept-1.png")}
+                className="w-full h-auto rounded-lg border border-neutral-200 dark:border-neutral-800 cursor-zoom-in transition-transform duration-200 hover:scale-[1.01]"
               />
             </div>
           </details>
@@ -340,7 +358,8 @@ export default function OnePageCheckoutCaseStudy() {
               <img
                 src="/images/concept-2.png"
                 alt="Concept 2 — Consolidate review and payment into a single step"
-                className="w-full h-auto rounded-lg border border-neutral-200 dark:border-neutral-800"
+                onClick={() => setZoomImage("/images/concept-2.png")}
+                className="w-full h-auto rounded-lg border border-neutral-200 dark:border-neutral-800 cursor-zoom-in transition-transform duration-200 hover:scale-[1.01]"
               />
             </div>
           </details>
@@ -392,7 +411,8 @@ export default function OnePageCheckoutCaseStudy() {
               <img
                 src="/images/concept-3.png"
                 alt="Concept 3 — Balance speed with confidence"
-                className="w-full h-auto rounded-lg border border-neutral-200 dark:border-neutral-800"
+                onClick={() => setZoomImage("/images/concept-3.png")}
+                className="w-full h-auto rounded-lg border border-neutral-200 dark:border-neutral-800 cursor-zoom-in transition-transform duration-200 hover:scale-[1.01]"
               />
             </div>
           </details>
@@ -894,6 +914,19 @@ export default function OnePageCheckoutCaseStudy() {
   </div>
 </div>
 </section>
+      {zoomImage && (
+        <div
+          className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50"
+          onClick={() => setZoomImage(null)}
+        >
+          <img
+            src={zoomImage}
+            alt="Zoomed concept view"
+            className="max-w-[95vw] max-h-[90vh] rounded-lg border border-neutral-200 dark:border-neutral-800"
+            onClick={(event) => event.stopPropagation()}
+          />
+        </div>
+      )}
     </article>   
     </ProtectedPage>
   );
