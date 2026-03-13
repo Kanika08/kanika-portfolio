@@ -81,7 +81,7 @@ export default function AboutPage() {
 
 {/* Email */}
 <a
-  href="mailto:kanika.vasudeva@gmail.com"
+  href="mailto:kanikavasudeva8@gmail.com"
   className="inline-flex items-center gap-2 text-sm font-medium btn-secondary"
 >
   Get in touch

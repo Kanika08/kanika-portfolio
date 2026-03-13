@@ -26,7 +26,7 @@ export default function HomePage() {
         </Link>
 
         <Link
-          href="mailto:kanika.vasudeva@gmail.com"
+          href="mailto:kanikavasudeva8@gmail.com"
           className="text-sm font-medium btn-secondary"
         >
           Let&apos;s connect
