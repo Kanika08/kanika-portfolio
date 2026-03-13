@@ -91,6 +91,18 @@ const caseStudies = [
     imageBg: "bg-[#FFF1E6] dark:bg-neutral-900",
     cta: "View case study on Medium ↗",
   },
+  {
+    type: "external",
+    href: "https://medium.com/prototypr/the-new-zomato-app-c4ce5e5a9a7c",
+    product: "Zomato",
+    title: "Zomato Consumer App Redesign",
+    summary:
+      "Redesigned Zomato’s core consumer journey across Homepage, Search, and Restaurant pages, launching a new scalable UI foundation for iOS and Android. The redesign improved restaurant page views by 21% and increased transactions by up to 17%.",
+    tags: ["Growth", "Product redesign", "Mobile", "Data-driven"],
+    image: "/images/cover_zomato_design_system.png",
+    imageBg: "bg-[#FFF1E6] dark:bg-neutral-900",
+    cta: "View case study on Medium ↗",
+  },
 ];
 
 export default function WorkPage() {
