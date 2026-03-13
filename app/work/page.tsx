@@ -95,12 +95,11 @@ const caseStudies = [
     type: "external",
     href: "https://medium.com/prototypr/the-new-zomato-app-c4ce5e5a9a7c",
     product: "Zomato",
-    title: "Zomato Consumer App Redesign",
+    title: "Consumer App Redesign",
     summary:
-      "Redesigned Zomato’s core consumer journey across Homepage, Search, and Restaurant pages, launching a new scalable UI foundation for iOS and Android. The redesign improved restaurant page views by 21% and increased transactions by up to 17%.",
-    tags: ["Growth", "Product redesign", "Mobile", "Data-driven"],
-    image: "/images/cover_zomato_design_system.png",
-    imageBg: "bg-[#FFF1E6] dark:bg-neutral-900",
+      "Led the redesign of Zomato’s core consumer app across the Homepage, Search, and Restaurant pages, introducing a modern UI foundation for both iOS and Android. The redesign improved restaurant page views by 21% and increased transactions by up to 17%.",
+    tags: ["Growth design", "Mobile app design", "Design system"],
+    image: "/videos/cover_zomato_redesign.gif",
     cta: "View case study on Medium ↗",
   },
 ];
@@ -138,18 +137,18 @@ export default function WorkPage() {
           return (
             <Wrapper key={study.title as string} {...wrapperProps}>
               <article className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-                {/* Image container */}
-                <div
-                  className={`relative aspect-[4/3] rounded-xl overflow-hidden ${study.imageBg}`}
-                >
-                  {study.image && (
-                    <img
-                      src={study.image}
-                      alt="Case study cover"
-                      className="w-full h-full object-cover"
-                    />
-                  )}
-                </div>
+               {/* Image container */}
+<div
+  className={`relative aspect-[4/3] rounded-xl overflow-hidden shadow-sm ${study.imageBg || ""}`}
+>
+  {study.image && (
+    <img
+      src={study.image}
+      alt="Case study cover"
+      className="absolute inset-0 w-full h-full object-cover"
+    />
+  )}
+</div>
 
                 {/* Text content */}
                 <div>
