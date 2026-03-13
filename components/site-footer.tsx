@@ -21,7 +21,7 @@ export function SiteFooter() {
 
             {/* Email */}
             <a
-              href="mailto:kanika.vasudeva@gmail.com"
+              href="mailto:kanikavasudeva8@gmail.com"
               className="flex items-center gap-2 btn-secondary"
             >
              <HiMail className="h-4 w-4 opacity-70" />
