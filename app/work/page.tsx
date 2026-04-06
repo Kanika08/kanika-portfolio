@@ -8,6 +8,8 @@ const tagStyles: Record<string, string> = {
     "bg-blue-50 text-blue-700 dark:bg-neutral-800 dark:text-neutral-200",
   "Growth systems":
     "bg-blue-50 text-blue-700 dark:bg-neutral-800 dark:text-neutral-200",
+    "Retention":
+    "bg-blue-50 text-blue-700 dark:bg-neutral-800 dark:text-neutral-200",
 
   // Subscription
   Subscription:
@@ -20,12 +22,14 @@ const tagStyles: Record<string, string> = {
     "bg-emerald-50 text-emerald-700 dark:bg-neutral-800 dark:text-neutral-200",
   "Design system":
     "bg-emerald-50 text-emerald-700 dark:bg-neutral-800 dark:text-neutral-200",
+    "Product strategy":
+    "bg-emerald-50 text-emerald-700 dark:bg-neutral-800 dark:text-neutral-200",
   Scale:
     "bg-emerald-50 text-emerald-700 dark:bg-neutral-800 dark:text-neutral-200",
   "Cross-functional":
     "bg-emerald-50 text-emerald-700 dark:bg-neutral-800 dark:text-neutral-200",
 
-  // Engagement
+  // Product Strategy
   Engagement:
     "bg-amber-50 text-amber-700 dark:bg-neutral-800 dark:text-neutral-200",
   "Information design":
@@ -61,11 +65,12 @@ const caseStudies = [
     product: "Prodigy",
     title: "Parent Insights Dashboard",
     summary:
-      "Redesigned Prodigy’s parent insights experience by replacing vanity metrics with actionable learning signals. Increased app engagement by 2.56% and drove a 34% lift in retention.",
-    tags: ["Engagement", "Mobile app design", "Systems thinking"],
+      "Turned an ambiguous “increase engagement” ask into a product strategy focus on trust. Redesigned the Parent Insights experience to make learning progress visible by helping parents understand, trust and return. Increased app engagement by 2.56% and drove a 34% lift in retention.",
+    tags: ["Product strategy", "Mobile app design", "Retention"],
+    readTime: "8 min read",
     image: "/images/cover_parent_insights.png", 
     imageBg: "bg-[#EAF7F2] dark:bg-neutral-900",
-    cta: "Case study in progress 🔒",
+    cta: "View case study →",
   },
   {
     type: "external",

@@ -60,20 +60,24 @@ export default function ParentInsightsCaseStudy() {
         {/* Hero */}
         <section className="space-y-6">
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100 leading-tight">
-          Redefining Parent Engagement in Prodigy’s Parent App
+          From Engagement to Trust in Prodigy’s Parent App
           </h1>
 
           <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
-          Led the redesign of Prodigy’s Parent App Insights experience to help parents understand progress, spot struggles early, and return more often.
+          Prodigy’s Parent App Insights experience was designed to show learning — but in practice, it mostly showed activity.
+
+I was asked to increase parent engagement. Instead, I reframed the problem: helping parents understand whether learning was actually happening.
+
+I led the redesign of the Insights experience to translate gameplay data into clear signals of progress and struggle — building trust and giving parents a reason to return.
           </p>
 
           <dl className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pt-6 text-sm">
             <div>
               <dt className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
-                Company
+                Scope
               </dt>
               <dd className="mt-2 text-neutral-900 dark:text-neutral-100">
-                Prodigy
+                Product Strategy, IA, Research
               </dd>
             </div>
 
@@ -105,101 +109,117 @@ export default function ParentInsightsCaseStudy() {
             </div>
           </dl>
 
-          <div className="grid md:grid-cols-3 gap-4 pt-2 max-w-3xl">
-            <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 px-5 py-5">
-              <div className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
-                Engagement
-              </div>
-              <div className="mt-3 text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
-                +2.56%
-              </div>
-            </div>
-
-            <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 px-5 py-5">
-              <div className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
-                Parent visits
-              </div>
-              <div className="mt-3 text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
-                3.11
-              </div>
-            </div>
-
-            <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 px-5 py-5">
-              <div className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
-                Retention lift
-              </div>
-              <div className="mt-3 text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
-                +34%
-              </div>
-            </div>
-          </div>
         </section>
 
-        {/* Product Context */}
-        <section className="space-y-6">
-          <div className="space-y-3 max-w-2xl">
-            <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
-            The Problem Wasn’t the Dashboard — It Was Trust
-            </h2>
-            <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
-            Prodigy’s business depends on more than student gameplay.
-Parents are the ones who decide whether the product is worth paying for — and whether they’ll keep paying for it.
 
-But the Parent App’s Insights page wasn’t helping them answer the questions they actually cared about:
 
-Is my child improving?
-What are they learning?
-Where might they need support?
+       {/* Problem Framing */}
+<section className="space-y-10 md:space-y-14">
+  {/* Section Header */}
+  <div className="max-w-3xl space-y-4">
+    <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#44E0C4]">
+      Problem Framing
+    </p>
 
-Instead, the experience surfaced activity metrics that were academically dense, difficult to interpret, and weak at building trust.
+    <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100 max-w-4xl leading-tight">
+      The Problem Wasn’t the Dashboard — It Was Trust
+    </h2>
 
-I was asked to “increase parent engagement” — but the harder challenge was that nobody had clearly defined what engagement should mean, or what kind of information would actually drive it.
-            </p>
-          </div>
-          </section>
+    <p className="text-base md:text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
+      The Parent App’s Insights experience was supposed to make learning visible.
+      Instead, it mostly surfaced activity — leaving parents with data, but not much confidence.
+    </p>
 
-          <section className="space-y-10">
-  <div className="grid lg:grid-cols-[1fr_1.1fr] gap-12 lg:gap-16 items-start">
-    
-    {/* Left Content */}
-    <div className="max-w-xl space-y-5">
-      <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
-        Why This Surface Mattered to the Business
-      </h2>
+    <p className="text-base md:text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
+      The issue wasn’t information density. It was interpretation:
+      the product wasn’t clearly answering whether progress was actually happening.
+    </p>
+  </div>
+
+  {/* Strategic Framing */}
+  <div className="grid lg:grid-cols-2 gap-6 md:gap-8">
+    {/* Business Context */}
+    <div className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-900/40 p-6 md:p-8 space-y-4">
+      <p className="text-xs font-medium uppercase tracking-[0.16em] text-neutral-500 dark:text-neutral-400">
+        Business Context
+      </p>
+
+      <h3 className="text-lg md:text-xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+        Insights was a key surface for reinforcing product value
+      </h3>
 
       <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
-        Prodigy’s business depends on more than student gameplay.
-        While students generate the learning data, parents are the ones who decide whether the product is valuable enough to subscribe to and keep using.
+        While students generated the learning data, the Parent App was one of the
+        main places families evaluated whether that learning felt real, useful, and
+        worth returning for.
       </p>
 
       <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
-        That made the Parent App’s Insights experience strategically important:
-        it was one of the main places where parents could evaluate whether learning was actually happening.
-      </p>
-
-      <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
-        Improving this surface wasn’t just a UX opportunity — it was a trust and retention opportunity.
+        That made Insights more than a reporting surface — it was a trust and
+        retention driver.
       </p>
     </div>
 
-    {/* Right Visual */}
-    <div className="w-full space-y-3">
-      <img
-        src="/images/prodigy-flywheel.png"
-        alt="Prodigy flywheel showing how students, parents, and teachers reinforce product value and learning outcomes"
-        className="w-full h-auto block"
-      />
-      <p className="text-xs text-neutral-500 dark:text-neutral-400">
-        Internal ecosystem model showing how value flows between students, parents, and teachers.
+    {/* Parent Need */}
+    <div className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-900/40 p-6 md:p-8 space-y-5">
+      <p className="text-xs font-medium uppercase tracking-[0.16em] text-neutral-500 dark:text-neutral-400">
+        Parent Need
       </p>
+
+      <h3 className="text-lg md:text-xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+      They weren’t looking for more data, but more meaningful signals.
+      </h3>
+
+      <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+        The experience surfaced usage metrics, but not the signals they actually needed to understand learning
+      </p>
+
+      <ul className="space-y-3 text-sm md:text-base text-neutral-700 dark:text-neutral-300">
+        <li className="flex items-center gap-3">
+          <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-[#44E0C4] shrink-0" />
+          <span>Is my child improving?</span>
+        </li>
+        <li className="flex items-center gap-3">
+          <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-[#44E0C4] shrink-0" />
+          <span>What are they learning?</span>
+        </li>
+        <li className="flex items-center gap-3">
+          <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-[#44E0C4] shrink-0" />
+          <span>Where might they need support?</span>
+        </li>
+      </ul>
     </div>
   </div>
 
-  {/* Pull Quote */}
-  <div className="max-w-2xl">
-    <div className="border-l-4 border-[#44E0C4] pl-5 py-1">
-      <p className="text-base md:text-lg font-medium tracking-tight text-neutral-900 dark:text-neutral-100 leading-relaxed">
-        If gameplay created the data, Insights had to create the trust.
+  {/* Ecosystem + Strategic Takeaway */}
+  <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-14 items-center">
+    <div className="space-y-4">
+      <img
+        src="/images/prodigy-flywheel.png"
+        alt="Prodigy flywheel showing how students, parents, and teachers reinforce product value and learning outcomes"
+        className="w-full h-auto block rounded-2xl border border-neutral-200 dark:border-neutral-800"
+      />
+      <p className="text-xs text-neutral-500 dark:text-neutral-400">
+        Internal ecosystem model showing how value flows between students, parents,
+        and teachers.
+      </p>
+    </div>
+
+    <div className="space-y-5 max-w-xl">
+      <p className="text-xs font-medium uppercase tracking-[0.16em] text-neutral-500 dark:text-neutral-400">
+        Strategic Takeaway
+      </p>
+
+      <div className="border-l-4 border-[#44E0C4] pl-5 py-1">
+        <h3 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100 leading-tight">
+          If gameplay created the data, Insights had to create the trust.
+        </h3>
+      </div>
+
+      <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+        The opportunity wasn’t to add more information. It was to translate
+        learning into something parents could quickly understand, believe, and
+        act on.
       </p>
     </div>
   </div>
@@ -214,8 +234,8 @@ I was asked to “increase parent engagement” — but the harder challenge was
     </h2>
 
     <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
-      The ask sounded simple: increase parent engagement.
-      But “engagement” meant different things depending on who you asked.
+    The initial ask was to “increase parent engagement.”
+    But engagement meant different things across the organization — more usage, more interaction, higher retention.
     </p>
 
     <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
@@ -266,326 +286,357 @@ I was asked to “increase parent engagement” — but the harder challenge was
   </div>
 </section>
 
-        {/* My Approach */}
-        function MyRoleSection() {
-  return (
-    <section className="w-full px-6 md:px-12 lg:px-20 py-24">
-      <div className="max-w-6xl">
-        {/* Section label */}
-        <p className="text-xs md:text-sm font-semibold uppercase tracking-[0.18em] text-neutral-500 mb-6">
-          My Role
+  {/* My Role */}
+<section className="space-y-12 pt-8">
+  <div className="max-w-3xl space-y-6">
+    <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+      My Role: Defining the Product Direction
+    </h2>
+
+    <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+    I led this work as the product designer for the Parent Insights experience — but the core challenge wasn’t just designing a better dashboard. The bigger challenge was defining what engagement should actually mean for this surface, aligning the team around it, and translating that into a clearer product direction.
+    </p>
+
+    <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+      My role went beyond interface design. I helped define the problem, align stakeholders around
+      the right success criteria, and shape the product direction before solutions were explored.
+    </p>
+  </div>
+
+  <div className="grid md:grid-cols-2 gap-10 md:gap-16 pt-4">
+    <div className="space-y-6">
+      <p className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
+        Strategic Work
+      </p>
+
+      <div className="space-y-5">
+        <p className="text-sm md:text-base text-neutral-900 dark:text-neutral-100">
+          Reframed the opportunity across Product, Data, and Design
         </p>
 
-        {/* Intro */}
-        <div className="max-w-4xl space-y-8">
-          <p className="text-2xl md:text-3xl leading-[1.45] tracking-tight text-neutral-900">
-            I led this work as the product designer responsible for the Parent App Insights experience.
-          </p>
+        <p className="text-sm md:text-base text-neutral-900 dark:text-neutral-100">
+          Aligned Product, data and design on behavioral goals and success metrics
+        </p>
 
-          <p className="text-lg md:text-[1.55rem] leading-[1.7] tracking-tight text-neutral-700">
-            My role went beyond interface design. I helped define the problem, align stakeholders around
-            the right success criteria, and shape the product direction before solutions were explored.
-          </p>
-        </div>
-
-        {/* Role breakdown */}
-        <div className="mt-20 grid md:grid-cols-2 gap-16 md:gap-20 max-w-5xl">
-          {/* Left column */}
-          <div>
-            <p className="text-xs md:text-sm font-semibold uppercase tracking-[0.18em] text-neutral-900 mb-8">
-              Framing the opportunity
-            </p>
-
-            <div className="space-y-8">
-              <p className="text-lg md:text-[1.7rem] leading-[1.55] tracking-tight text-neutral-700">
-                Reframed the opportunity across Product, Data, and Design
-              </p>
-
-              <p className="text-lg md:text-[1.7rem] leading-[1.55] tracking-tight text-neutral-700">
-                Aligned the team on behavioral goals and success metrics
-              </p>
-
-              <p className="text-lg md:text-[1.7rem] leading-[1.55] tracking-tight text-neutral-700">
-                Synthesized research to define what parents actually value
-              </p>
-            </div>
-          </div>
-
-          {/* Right column */}
-          <div>
-            <p className="text-xs md:text-sm font-semibold uppercase tracking-[0.18em] text-neutral-900 mb-8">
-              Shaping the experience
-            </p>
-
-            <div className="space-y-8">
-              <p className="text-lg md:text-[1.7rem] leading-[1.55] tracking-tight text-neutral-700">
-                Defined the experience strategy for translating gameplay into meaningful learning signals
-              </p>
-
-              <p className="text-lg md:text-[1.7rem] leading-[1.55] tracking-tight text-neutral-700">
-                Led concept development and iterative testing
-              </p>
-
-              <p className="text-lg md:text-[1.7rem] leading-[1.55] tracking-tight text-neutral-700">
-                Designed the final interaction model and information architecture
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Strategic alignment */}
-        <div className="mt-24 pt-12 border-t border-neutral-200 max-w-5xl">
-          <p className="text-xs md:text-sm font-semibold uppercase tracking-[0.18em] text-neutral-500 mb-6">
-            What we aligned around
-          </p>
-
-          <p className="text-3xl md:text-5xl leading-[1.2] tracking-tight text-neutral-900 max-w-4xl">
-            We redefined engagement as <span className="italic">return value</span> — not activity.
-          </p>
-
-          <p className="mt-8 text-lg md:text-[1.55rem] leading-[1.75] tracking-tight text-neutral-700 max-w-4xl">
-            For Insights, success wasn’t more taps or more time in app. It was giving parents a compelling
-            reason to come back: confidence that learning was happening, and clarity on where their child
-            might need support.
-          </p>
-
-          {/* Pull quote */}
-          <div className="mt-12 max-w-3xl pl-6 border-l-4 border-[#47E6C1]">
-            <p className="text-2xl md:text-[2rem] italic leading-[1.45] tracking-tight text-neutral-900">
-              Parents don’t return for data — they return for clarity.
-            </p>
-          </div>
-        </div>
+        <p className="text-sm md:text-base text-neutral-900 dark:text-neutral-100">
+          Synthesized research to define what parents actually founf meaningful
+        </p>
       </div>
-    </section>
-  );
-}
- 
+    </div>
 
-        {/* Strategic Reframe */}
-        <section className="space-y-6">
-          <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
-            Strategic Reframe
-          </h2>
+    <div className="space-y-6">
+      <p className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
+        Design Leadership
+      </p>
 
-          <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
-            We reframed the opportunity from “increase engagement” to creating
-            a clearer parent outcome that could drive business impact.
-          </p>
+      <div className="space-y-5">
+        <p className="text-sm md:text-base text-neutral-900 dark:text-neutral-100">
+          Defined the experience strategy for surfacing learning progress and struggle
+        </p>
 
-          <div className="grid md:grid-cols-3 gap-4 max-w-4xl">
-            <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 px-5 py-5 text-center space-y-3">
-              <div className="text-sm font-medium text-neutral-900 dark:text-neutral-100">
-                Aligned Behavior
-              </div>
-              <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                Parents regularly check learning progress
-              </p>
-            </div>
+        <p className="text-sm md:text-base text-neutral-900 dark:text-neutral-100">
+          Led concept exploration and iterative validation
+        </p>
 
-            <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 px-5 py-5 text-center space-y-3">
-              <div className="text-sm font-medium text-neutral-900 dark:text-neutral-100">
-                Parent Outcome
-              </div>
-              <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                Confidence that learning is happening
-              </p>
-            </div>
+        <p className="text-sm md:text-base text-neutral-900 dark:text-neutral-100">
+          Designed the final information architecture and interaction model
+        </p>
+      </div>
+    </div>
+  </div>
 
-            <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 px-5 py-5 text-center space-y-3">
-              <div className="text-sm font-medium text-neutral-900 dark:text-neutral-100">
-                Business Impact
-              </div>
-              <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                Conversion, trust, and retention
-              </p>
-            </div>
-          </div>
+  <div className="pt-12 border-t border-neutral-200 dark:border-neutral-800 space-y-6">
+    <p className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
+      The Shift
+    </p>
 
-          <p className="text-base md:text-lg font-medium italic text-emerald-600 dark:text-emerald-400">
-            Engagement builds trust — and trust drives retention.
-          </p>
-        </section>
+    <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+    We shifted engagement from activity to return value.
+    </h2>
 
-        {/* Existing Experience */}
-        <section className="space-y-6">
-          <div className="space-y-3 max-w-2xl">
-            <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
-              Existing Experience
-            </h2>
-            <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
-              The existing insights page surfaced performance metrics, but didn’t
-              translate those numbers into meaningful learning understanding.
-            </p>
-          </div>
+    <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-3xl">
+    For Insights, success wasn’t more taps or more time in app. It was giving parents a compelling reason to come back:
+    confidence that learning was happening, and clarity on where support might be needed.
+    </p>
+</div>
 
-          <div className="grid md:grid-cols-2 gap-4 max-w-3xl">
-            <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 px-6 py-6 space-y-3">
-              <div className="text-sm font-medium text-neutral-900 dark:text-neutral-100">
-                Data surfaced
-              </div>
-              <ul className="list-disc pl-5 space-y-2 text-sm text-neutral-600 dark:text-neutral-400">
-                <li>Questions answered</li>
-                <li>Topics completed</li>
-                <li>Weekly activity</li>
-                <li>Success rate</li>
-              </ul>
-            </div>
+   {/* Pull Quote */}
+  <div className="max-w-2xl">
+    <div className="border-l-4 border-[#44E0C4] pl-5 py-1">
+      <p className="text-base md:text-lg font-medium tracking-tight text-neutral-900 dark:text-neutral-100 leading-relaxed">
+      Engagement wasn’t about time spent — it was about making progress feel visible.
+      </p>
+    </div>
+  </div>
+</section>
 
-            <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 px-6 py-6 space-y-3">
-              <div className="text-sm font-medium text-neutral-900 dark:text-neutral-100">
-                What parents still couldn’t answer
-              </div>
-              <ul className="list-disc pl-5 space-y-2 text-sm text-neutral-600 dark:text-neutral-400">
-                <li>Is my child improving?</li>
-                <li>What skills are they learning?</li>
-                <li>Where might they need help?</li>
-              </ul>
-            </div>
-          </div>
+ {/* Existing Experience */}
+<section className="space-y-10 md:space-y-12">
+  <div className="max-w-4xl space-y-6">
+    <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#44E0C4]">
+      Existing Experience
+    </p>
 
-          <div className="mx-auto w-full max-w-2xl">
-            <ZoomableImage
-              src="/images/parent-insights-existing.png"
-              alt="Existing Parent Insights mobile screen"
-            />
-          </div>
-        </section>
+    <h2 className="text-2xl md:text-4xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100 leading-tight max-w-4xl">
+      The Existing Experience Raised the Wrong Questions
+    </h2>
+
+    <p className="text-base md:text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-3xl">
+      Before redesigning the experience, I needed to understand why the existing
+      page wasn’t creating stronger parent value.
+    </p>
+
+    <p className="text-base md:text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-3xl">
+      At a glance, it looked information-rich — surfacing metrics like questions
+      answered, time played, and success rate. But those signals seemed more useful
+      for reporting activity than helping parents understand learning.
+    </p>
+
+    <p className="text-base md:text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-3xl">
+      That led to an early hypothesis: the issue wasn’t how much data the product
+      surfaced, but whether parents could interpret what it actually meant.
+    </p>
+
+    <div className="border-l-4 border-[#44E0C4] pl-5 py-1 max-w-2xl">
+      <p className="text-lg md:text-xl font-medium tracking-tight text-neutral-900 dark:text-neutral-100 leading-relaxed">
+        The question wasn’t whether data existed — it was whether it created understanding.
+      </p>
+    </div>
+  </div>
+</section>
 
         {/* Product Question */}
         <section className="space-y-6">
           <div className="space-y-3 max-w-2xl">
             <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
-              A key product question
+              Two Product Directions
             </h2>
             <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
-              Do parents engage more when we show more data — or when we show clearer meaning?
+            If interpretation was the core issue, the next question became:
+what kind of experience would actually create more parent value? There were two plausible directions — and each would likely increase engagement, but for very different reasons.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-4 max-w-3xl">
             <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 px-6 py-6 space-y-4">
-              <div className="text-sm font-medium text-neutral-900 dark:text-neutral-100">
-                Product hypothesis
+              <div className="text-sm font-semibold text-neutral-900 dark:text-neutral-100">
+                Direction A (Expand reporting)
               </div>
               <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                More visible performance metrics will reinforce platform value.
+              If we exposed more performance and activity data, parents would
+              perceive more value and engage more often.
               </p>
+          
+              <div className="border-t border-neutral-200 pt-6">
+              <p className="text-sm font-medium text-neutral-500 mb-4">
+                This would emphasize:
+              </p>
+              </div>
+
               <ul className="list-disc pl-5 text-sm text-neutral-600 dark:text-neutral-400 space-y-1">
-                <li>Questions answered</li>
-                <li>Success rate</li>
-                <li>Activity streaks</li>
+                <li>More stats and gameplay activity</li>
+                <li>More measurable interactions</li>
+                <li>More vissible evidence of usage</li>
               </ul>
             </div>
 
             <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 px-6 py-6 space-y-4">
-              <div className="text-sm font-medium text-neutral-900 dark:text-neutral-100">
-                Design hypothesis
+              <div className="text-sm font-semibold text-neutral-900 dark:text-neutral-100">
+                Direction B (Clarifying Leanring)
               </div>
               <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                Clearer learning signals will make progress easier to understand.
+              If we help parents quickly understand learning progress and struggle, they will feel more confident and have a stronger reason to return.
               </p>
+              <div className="border-t border-neutral-200 pt-6">
+              <p className="text-sm font-medium text-neutral-500 mb-4">
+                This would emphasize:
+              </p>
+              </div>
               <ul className="list-disc pl-5 text-sm text-neutral-600 dark:text-neutral-400 space-y-1">
-                <li>Mastered topics</li>
-                <li>Struggling skills</li>
+                <li>Skills mastered</li>
+                <li>Areas of Struggle</li>
                 <li>Curriculum progress</li>
               </ul>
             </div>
           </div>
-        </section>
 
-        {/* Research Strategy */}
-        <section className="space-y-6">
-          <div className="space-y-3 max-w-2xl">
-            <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
-              Research Strategy
-            </h2>
-            <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
-              We validated what drives parent engagement by testing which learning
-              signals parents actually found useful and motivating.
-            </p>
-          </div>
+          <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-3xl">
+  Both directions could increase interaction — but only one was likely to build trust and repeat use.
+</p>
+ {/* Strategic question */}
+ <div className="max-w-3xl">
+    <div className="border-l-4 border-[#44E0C4] pl-5 py-1 space-y-2">
+      <p className="text-base md:text-lg font-medium tracking-tight text-neutral-900 dark:text-neutral-100 leading-relaxed">
+        Do parents return for more data — or for clearer meaning?
+      </p>
 
-          <div className="grid md:grid-cols-2 gap-4 max-w-3xl">
-            <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 px-6 py-6 space-y-3">
-              <div className="text-sm font-medium text-neutral-900 dark:text-neutral-100">
-                Research questions
-              </div>
-              <ul className="list-disc pl-5 space-y-2 text-sm text-neutral-600 dark:text-neutral-400">
-                <li>Which learning signals parents find most useful</li>
-                <li>Which metrics feel meaningful vs superficial</li>
-                <li>What information parents feel is missing</li>
-                <li>What prompts parents to take action</li>
-              </ul>
-            </div>
+      <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+      This wasn’t just a design question — it was a strategic product decision. I used research and an audit of the existing experience to determine which direction would create real parent value.
+      </p>
+    </div>
+  </div>
 
-            <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 px-6 py-6 space-y-3">
-              <div className="text-sm font-medium text-neutral-900 dark:text-neutral-100">
-                Research approach
-              </div>
-              <ul className="space-y-2 text-sm text-neutral-600 dark:text-neutral-400">
-                <li>• Open card sorting</li>
-                <li>• Parent interviews</li>
-                <li>• Concept validation</li>
-              </ul>
-            </div>
-          </div>
-        </section>
+</section>
 
-        {/* Research Insights */}
-        <section className="space-y-6">
-          <div className="space-y-3 max-w-2xl">
-            <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
-              Key Research Insights
-            </h2>
-            <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
-              Parents valued learning progress more than performance metrics.
-            </p>
-          </div>
+{/* Research Strategy */}
+<section className="space-y-8">
+  <div className="space-y-3 max-w-3xl">
+    <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+      Research Strategy
+    </h2>
+    <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+    To determine which direction would actually drive parent trust and return behavior, I used a mix of prioritization, interviews, and early concept testing.
+    </p>
+    <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+    This helped move the team from assumptions to evidence by clarifying what parents found meaningful, motivating, and worth coming back for.
+    </p>
+  </div>
 
-          <div className="grid md:grid-cols-2 gap-4 max-w-3xl">
-            <div className="space-y-4">
-              <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 px-6 py-6 space-y-3">
-                <div className="text-sm font-medium text-neutral-900 dark:text-neutral-100">
-                  Questions parents want answered
-                </div>
-                <ul className="list-disc pl-5 space-y-2 text-sm text-neutral-600 dark:text-neutral-400">
-                  <li>What topics their child has mastered</li>
-                  <li>Where their child is struggling</li>
-                  <li>How they are progressing through the curriculum</li>
-                </ul>
-              </div>
+  <div className="grid md:grid-cols-3 gap-4 max-w-5xl">
+    <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 px-6 py-6 space-y-4">
+      <p className="text-xs font-semibold tracking-[0.18em] uppercase text-neutral-500">
+        Prioritization
+      </p>
+      <div className="space-y-2">
+        <p className="text-base font-medium text-neutral-900 dark:text-neutral-100">
+          Open card sorting
+        </p>
+        <p className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">
+        To identify which learning signals parents found most useful at a glance.
+        </p>
+      </div>
+    </div>
 
-              <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 px-6 py-6 space-y-3">
-                <div className="text-sm font-medium text-neutral-900 dark:text-neutral-100">
-                  Key takeaways
-                </div>
-                <ul className="list-disc pl-5 space-y-2 text-sm text-neutral-600 dark:text-neutral-400">
-                  <li>Parents want early signals of struggle</li>
-                  <li>Numbers lack meaning without curriculum context</li>
-                </ul>
-              </div>
-            </div>
+    <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 px-6 py-6 space-y-4">
+      <p className="text-xs font-semibold tracking-[0.18em] uppercase text-neutral-500">
+        Interpretation
+      </p>
+      <div className="space-y-2">
+        <p className="text-base font-medium text-neutral-900 dark:text-neutral-100">
+          1:1 parent interviews
+        </p>
+        <p className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">
+        To understand how parents interpreted learning data and what built confidence or prompted action.
+        </p>
+      </div>
+    </div>
 
-            <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 overflow-hidden">
-              <ZoomableImage
-                src="/images/parent-card-sorting.png"
-                alt="Card sorting synthesis for parent insights"
-                className="rounded-none border-0"
-              />
-            </div>
-          </div>
-        </section>
+    <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 px-6 py-6 space-y-4">
+      <p className="text-xs font-semibold tracking-[0.18em] uppercase text-neutral-500">
+        Validation
+      </p>
+      <div className="space-y-2">
+        <p className="text-base font-medium text-neutral-900 dark:text-neutral-100">
+          Low-fidelity concept testing
+        </p>
+        <p className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">
+        To evaluate which direction would actually improve understanding, trust, and perceived value.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* Research Insight */}
+<section className="space-y-8 pt-10">
+  <div className="space-y-4 max-w-3xl">
+    <p className="text-xs font-semibold tracking-[0.18em] uppercase text-neutral-500 dark:text-neutral-400">
+      Research Insight
+    </p>
+
+    <h2 className="text-2xl md:text-4xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100 leading-tight">
+      Parents didn’t need more data — they needed clearer meaning.
+    </h2>
+
+    <p className="text-base md:text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-3xl">
+      The research clarified why the existing experience wasn’t creating stronger
+      parent value: the issue wasn’t information scarcity, but interpretation.
+    </p>
+
+    <p className="text-base md:text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-3xl">
+      Parents were already being shown learning data — but not in a way that helped
+      them quickly understand progress, identify struggle, or know what mattered.
+    </p>
+  </div>
+
+  <div className="grid lg:grid-cols-[1.05fr_1fr] gap-6 max-w-6xl items-start">
+    <div className="space-y-4">
+      <div className="rounded-2xl border border-neutral-200 dark:border-neutral-800 px-6 py-6 space-y-4">
+        <p className="text-xs font-semibold tracking-[0.18em] uppercase text-neutral-500 dark:text-neutral-400">
+          What parents valued
+        </p>
+
+        <ul className="space-y-4 text-sm md:text-base text-neutral-700 dark:text-neutral-300 leading-relaxed">
+          <li>
+            <span className="font-medium text-neutral-900 dark:text-neutral-100">
+              Visible progress
+            </span>{" "}
+            — whether learning was moving forward
+          </li>
+          <li>
+            <span className="font-medium text-neutral-900 dark:text-neutral-100">
+              Early signs of struggle
+            </span>{" "}
+            — where support might be needed
+          </li>
+          <li>
+            <span className="font-medium text-neutral-900 dark:text-neutral-100">
+              Curriculum context
+            </span>{" "}
+            — what their child was working on
+          </li>
+        </ul>
+      </div>
+
+      <div className="rounded-2xl border border-neutral-200 dark:border-neutral-800 px-6 py-6 space-y-4">
+        <p className="text-xs font-semibold tracking-[0.18em] uppercase text-neutral-500 dark:text-neutral-400">
+          What the experience optimized for
+        </p>
+
+        <ul className="space-y-4 text-sm md:text-base text-neutral-700 dark:text-neutral-300 leading-relaxed">
+          <li>
+            Activity and performance metrics that lacked meaning on their own
+          </li>
+          <li>
+            Reporting signals that were hard to interpret in a learning context
+          </li>
+          <li>
+            Evidence of usage, rather than evidence of progress
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div className="rounded-2xl border border-neutral-200 dark:border-neutral-800 overflow-hidden">
+      <ZoomableImage
+        src="/images/parent-card-sorting.png"
+        alt="Card sorting synthesis showing which parent-facing learning signals were most valued"
+        className="rounded-none border-0"
+      />
+    </div>
+  </div>
+
+  <div className="max-w-3xl pt-4">
+    <div className="border-l-4 border-[#44E0C4] pl-5 py-1">
+      <p className="text-base md:text-lg font-medium tracking-tight text-neutral-900 dark:text-neutral-100 leading-relaxed">
+        Parents weren’t looking for a dashboard to analyze — they were looking for proof that learning was happening.
+      </p>
+    </div>
+  </div>
+</section>
 
         {/* Parent Mindset */}
         <section className="space-y-6">
           <div className="space-y-3 max-w-2xl">
             <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
-              Parent Mindset
+              Design tension: one surface, two parent mindsets
             </h2>
             <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
-              Parents were not all looking for the same level of detail, but both
-              mindsets valued clarity over raw activity reporting.
+            Research showed that parents were not all looking for the same level of detail.
+
+Some wanted a quick sense of reassurance. Others wanted a more diagnostic view of where their child was progressing or struggling.
+
+The challenge was designing an experience that could support both without becoming either too shallow or too overwhelming.
             </p>
           </div>
 
@@ -614,45 +665,256 @@ I was asked to “increase parent engagement” — but the harder challenge was
           </div>
         </section>
 
-        {/* Curriculum Breakdown */}
-        <section className="space-y-4">
-          <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
-            Curriculum Breakdown
-          </h2>
+{/* System Complexity / Curriculum Hierarchy */}
+<section className="space-y-12 max-w-6xl">
+  {/* Intro */}
+  <div className="space-y-4 max-w-3xl">
+    <p className="text-xs font-semibold tracking-[0.18em] uppercase text-neutral-500">
+      System Complexity
+    </p>
 
-          <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
-            One of the core design challenges was translating Prodigy’s curriculum
-            hierarchy into something parents could understand quickly.
-          </p>
+    <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100 leading-tight">
+      Progress only made sense within the learning system
+    </h2>
 
-          <blockquote className="border-l-2 border-emerald-400 pl-4 italic text-sm md:text-base text-neutral-700 dark:text-neutral-300 max-w-2xl">
-            Parents struggle to connect curriculum hierarchy to their child’s learning progress.
-          </blockquote>
-        </section>
+    <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+      Before redesigning the experience, I had to understand the underlying
+      learning model the product was trying to represent.
+    </p>
 
-        {/* Design Challenge */}
-        <section className="space-y-4">
-          <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
-            Design Challenge
-          </h2>
+    <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+      Math progress wasn’t a single score. It lived across multiple layers —
+      from curriculum strands, to topics, to individual skills. That meant
+      performance data only became useful when grounded in the right learning
+      context.
+    </p>
+  </div>
 
-          <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
-            How might we translate curriculum progress into a view that parents can
-            quickly understand and act on?
-          </p>
+  {/* Diagram */}
+  <div className="rounded-[28px] border border-neutral-200 dark:border-neutral-800 px-6 py-10 md:px-10 md:py-14 bg-white/50 dark:bg-neutral-900/20">
+    {/* Level 1 */}
+    <div className="flex flex-col items-center text-center space-y-3">
+      <p className="text-[11px] uppercase tracking-[0.18em] text-neutral-500">
+        Level 1
+      </p>
+      <div className="inline-flex rounded-full border border-neutral-200 dark:border-neutral-700 px-5 py-2 text-sm font-medium text-neutral-900 dark:text-neutral-100 bg-white dark:bg-neutral-900">
+        Grade 1 Curriculum
+      </div>
+    </div>
 
-          <div className="grid md:grid-cols-3 gap-4 max-w-3xl">
-            <div className="rounded-full aspect-square border border-neutral-200 dark:border-neutral-800 flex items-center justify-center p-8 text-center text-sm font-medium text-neutral-900 dark:text-neutral-100">
-              Preserve curriculum structure
-            </div>
-            <div className="rounded-full aspect-square border border-emerald-400 bg-emerald-50 dark:bg-emerald-950/20 flex items-center justify-center p-8 text-center text-sm font-medium text-neutral-900 dark:text-neutral-100">
-              Highlight struggling areas
-            </div>
-            <div className="rounded-full aspect-square border border-neutral-200 dark:border-neutral-800 flex items-center justify-center p-8 text-center text-sm font-medium text-neutral-900 dark:text-neutral-100">
-              Stay simple and actionable
-            </div>
+    {/* Connector */}
+    <div className="flex justify-center py-6">
+      <div className="w-px h-10 bg-neutral-300 dark:bg-neutral-700" />
+    </div>
+
+    {/* Level 2 — Strands */}
+    <div className="space-y-5">
+      <p className="text-[11px] uppercase tracking-[0.18em] text-neutral-500 text-center">
+        Level 2 — Strands
+      </p>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 relative">
+        {[
+          "Number & Operations in Base Ten",
+          "Operations & Algebraic Thinking",
+          "Measurement & Data",
+          "Geometry",
+          "Patterns & Algebra Foundations",
+        ].map((strand, i) => (
+          <div
+            key={i}
+            className={`rounded-2xl border px-4 py-5 min-h-[120px] ${
+              i === 0
+                ? "border-[#44E0C4] bg-[#F2FFFB] dark:bg-[#0F1E1B]"
+                : "border-neutral-200 dark:border-neutral-800"
+            }`}
+          >
+            <p className="text-[11px] uppercase tracking-[0.14em] text-neutral-500 mb-3">
+              Strand {i + 1}
+            </p>
+            <p className="text-sm leading-relaxed text-neutral-900 dark:text-neutral-100">
+              {strand}
+            </p>
           </div>
-        </section>
+        ))}
+      </div>
+    </div>
+
+    {/* Nested connector from Strand 1 */}
+    <div className="hidden md:block relative h-20">
+      {/* vertical down from strand 1 */}
+      <div className="absolute left-[10%] top-0 h-8 w-px bg-neutral-300 dark:bg-neutral-700" />
+      {/* horizontal to topic group */}
+      <div className="absolute left-[10%] top-8 h-px w-[18%] bg-neutral-300 dark:bg-neutral-700" />
+      {/* label */}
+      <p className="absolute left-[10%] top-11 text-xs text-neutral-500 italic">
+        Zooming into Strand 1
+      </p>
+    </div>
+
+    {/* Mobile label */}
+    <div className="md:hidden pt-6 pb-2">
+      <p className="text-xs text-neutral-500 italic">
+        Zooming into Strand 1
+      </p>
+    </div>
+
+    {/* Level 3 — Topics */}
+    <div className="space-y-5">
+      <p className="text-[11px] uppercase tracking-[0.18em] text-neutral-500 text-center">
+        Level 3 — Topics within Strand 1
+      </p>
+
+      <div className="grid md:grid-cols-3 gap-4 max-w-4xl md:ml-[14%]">
+        {[
+          "Addition up to 100",
+          "Subtraction up to 100",
+          "Compare Numbers",
+        ].map((topic, i) => (
+          <div
+            key={i}
+            className={`rounded-2xl border px-5 py-5 text-sm leading-relaxed ${
+              i === 0
+                ? "border-[#44E0C4] bg-[#F2FFFB] dark:bg-[#0F1E1B] text-neutral-900 dark:text-neutral-100"
+                : "border-neutral-200 dark:border-neutral-800 text-neutral-700 dark:text-neutral-300"
+            }`}
+          >
+            {topic}
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* Nested connector from Addition */}
+    <div className="hidden md:block relative h-20">
+      {/* vertical down from addition */}
+      <div className="absolute left-[20%] top-0 h-8 w-px bg-neutral-300 dark:bg-neutral-700" />
+      {/* horizontal to skills */}
+      <div className="absolute left-[20%] top-8 h-px w-[18%] bg-neutral-300 dark:bg-neutral-700" />
+      {/* label */}
+      <p className="absolute left-[20%] top-11 text-xs text-neutral-500 italic">
+        Zooming into “Addition up to 100”
+      </p>
+    </div>
+
+    {/* Mobile label */}
+    <div className="md:hidden pt-6 pb-2">
+      <p className="text-xs text-neutral-500 italic">
+        Zooming into “Addition up to 100”
+      </p>
+    </div>
+
+    {/* Level 4 — Skills */}
+    <div className="space-y-5">
+      <p className="text-[11px] uppercase tracking-[0.18em] text-neutral-500 text-center">
+        Level 4 — Skills within “Addition up to 100”
+      </p>
+
+      <div className="grid md:grid-cols-3 gap-4 max-w-4xl md:ml-[24%]">
+        {[
+          "Count forward by 10",
+          "Compare two-digit numbers",
+          "Identify place value",
+        ].map((skill, i) => (
+          <div
+            key={i}
+            className="rounded-2xl border border-neutral-200 dark:border-neutral-800 px-5 py-5 text-sm leading-relaxed text-neutral-700 dark:text-neutral-300"
+          >
+            {skill}
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  {/* Pull Quote */}
+  <div className="max-w-2xl">
+    <div className="border-l-4 border-[#44E0C4] pl-5 py-1">
+      <p className="text-base md:text-lg font-medium tracking-tight text-neutral-900 dark:text-neutral-100 leading-relaxed">
+        The design challenge wasn’t just surfacing data — it was making the learning model legible to parents.
+      </p>
+    </div>
+  </div>
+</section>
+  
+
+   
+{/* Design Challenge */}
+<section className="space-y-8 max-w-5xl">
+  <div className="space-y-3 max-w-3xl">
+    <p className="text-xs font-semibold tracking-[0.18em] uppercase text-neutral-500">
+      Design challenge
+    </p>
+
+    <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+      Translating learning data into something parents could actually use
+    </h2>
+
+    <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+      The challenge was not information density — it was interpretation. We needed
+      to help parents understand progress, identify struggle, and feel confident
+      about what the data meant.
+    </p>
+  </div>
+
+  <div className="grid md:grid-cols-2 gap-4 max-w-5xl">
+    <div className="rounded-2xl border border-neutral-200 dark:border-neutral-800 px-6 py-6">
+      <div className="space-y-3">
+        <div className="flex items-baseline gap-3">
+         
+          <h3 className="text-base md:text-lg font-semibold text-neutral-900 dark:text-neutral-100">
+           1.  Make progress legible
+          </h3>
+        </div>
+        <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+          Parents should be able to tell quickly whether learning is moving forward.
+        </p>
+      </div>
+    </div>
+
+    <div className="rounded-2xl border border-neutral-200 dark:border-neutral-800 px-6 py-6">
+      <div className="space-y-3">
+        <div className="flex items-baseline gap-3">
+          <h3 className="text-base md:text-lg font-semibold text-neutral-900 dark:text-neutral-100">
+           2. Expose struggle meaningfully
+          </h3>
+        </div>
+        <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+          Signals of difficulty should feel useful, not alarming or abstract.
+        </p>
+      </div>
+    </div>
+
+    <div className="rounded-2xl border border-neutral-200 dark:border-neutral-800 px-6 py-6">
+      <div className="space-y-3">
+        <div className="flex items-baseline gap-3">
+          <h3 className="text-base md:text-lg font-semibold text-neutral-900 dark:text-neutral-100">
+           3. Use curriculum as structure
+          </h3>
+        </div>
+        <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+          Learning data needed a framework parents could mentally organize around.
+        </p>
+      </div>
+    </div>
+
+    <div className="rounded-2xl border border-neutral-200 dark:border-neutral-800 px-6 py-6">
+      <div className="space-y-3">
+        <div className="flex items-baseline gap-3">
+          <h3 className="text-base md:text-lg font-semibold text-neutral-900 dark:text-neutral-100">
+           4. Reduce interpretation effort
+          </h3>
+        </div>
+        <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+          The experience should help parents understand, not ask them to analyze.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 
         {/* Concept Evolution */}
         <section className="space-y-8">
@@ -661,8 +923,9 @@ I was asked to “increase parent engagement” — but the harder challenge was
               Design Concept Evolution
             </h2>
             <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
-              The goal wasn’t to choose a visual winner — it was to understand
-              which design patterns best helped parents interpret progress and take action.
+            I explored two distinct design directions to test how parents best interpret learning progress. One prioritized structure and depth; the other prioritized emotional clarity and motivation.
+
+The goal wasn’t to choose a prettier UI, it was to understand which interaction model best supported parent trust, comprehension, and return value.
             </p>
           </div>
 
@@ -685,9 +948,9 @@ I was asked to “increase parent engagement” — but the harder challenge was
                   Structured — information-first
                 </p>
                 <ul className="text-sm text-neutral-600 dark:text-neutral-400 space-y-1 list-disc pl-4">
-                  <li>Clear hierarchy and drill-down model</li>
-                  <li>Easy to scan and compare sections</li>
-                  <li>Felt more functional than motivating</li>
+                  <li>Strong hierarchy and drill-down model</li>
+                  <li>Easier to scan by curriculum structure</li>
+                  <li>Better for depth, but less emotionally motivating</li>
                 </ul>
               </div>
             </div>
@@ -710,13 +973,29 @@ I was asked to “increase parent engagement” — but the harder challenge was
                   Visual — progress-first
                 </p>
                 <ul className="text-sm text-neutral-600 dark:text-neutral-400 space-y-1 list-disc pl-4">
-                  <li>More emotionally engaging and encouraging</li>
-                  <li>Surfaced struggling areas quickly</li>
-                  <li>Reduced clarity for parents seeking depth</li>
+                  <li>More immediate and emotionally engaging</li>
+                  <li>Surfaced progress and struggle faster</li>
+                  <li>Less effective for deeper interpretation on its own</li>
                 </ul>
               </div>
             </div>
           </div>
+
+          {/* Takeaway */}
+<div className="mt-12 max-w-3xl">
+  <div className="border-l-4 border-[#44E0C4] pl-5 space-y-3">
+    
+    <p className="text-base md:text-lg font-medium tracking-tight text-neutral-900 dark:text-neutral-100 leading-relaxed">
+      What became clear was that parents needed both: the emotional clarity of visible progress, and the structure to understand what that progress actually meant.
+    </p>
+
+    <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
+      That insight shaped the final direction: a system that felt motivating at a glance, but still grounded in curriculum and learning context.
+    </p>
+
+  </div>
+</div>
+
         </section>
 
         {/* Final Design */}
@@ -726,15 +1005,14 @@ I was asked to “increase parent engagement” — but the harder challenge was
               Final Design Direction
             </h2>
             <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
-              The final experience combined the clarity of structured navigation
-              with the motivational quality of visual progress signals.
+              I moved forward with a direction that made learning progress immediately understandable, while still allowing parents to drill into the curriculum structure behind it.
             </p>
           </div>
 
           <div className="space-y-8">
             <div className="space-y-3">
               <h3 className="text-lg font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
-                Identify struggles early
+                01. Identify struggles early
               </h3>
               <p className="text-sm text-neutral-600 dark:text-neutral-400 max-w-2xl">
                 Parents can quickly see where their child may need support, drill into
@@ -748,7 +1026,7 @@ I was asked to “increase parent engagement” — but the harder challenge was
 
             <div className="space-y-3">
               <h3 className="text-lg font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
-                Reinforce learning success
+                02. Reinforce learning success
               </h3>
               <p className="text-sm text-neutral-600 dark:text-neutral-400 max-w-2xl">
                 Mastered skills were surfaced not just as completion states, but as
@@ -783,9 +1061,7 @@ I was asked to “increase parent engagement” — but the harder challenge was
               Learning Signal Logic
             </h2>
             <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
-              One of the most important parts of the work was not just the UI —
-              it was defining the product logic that translated gameplay data into
-              meaningful parent-facing signals.
+            The work didn’t stop at the dashboard. A key part of the design was defining how learning signals should be detected, prioritized, and surfaced across the parent experience.
             </p>
           </div>
 
@@ -795,8 +1071,7 @@ I was asked to “increase parent engagement” — but the harder challenge was
                 1. Signal Detection
               </div>
               <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                Struggling and mastery signals were defined using repeat behavior patterns
-                rather than isolated performance events.
+              Mastery and struggle signals were defined using repeat learning patterns and not isolated gameplay events. This made the signals more meaningful and reliable for parents.
               </p>
             </div>
 
@@ -805,8 +1080,7 @@ I was asked to “increase parent engagement” — but the harder challenge was
                 2. Signal Surfacing
               </div>
               <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                Signals were surfaced across dashboard highlights, drilldowns, and
-                key moments designed to bring parents back into the app.
+              The work didn’t stop at the dashboard. A key part of the design was defining how learning signals should be detected, prioritized, and surfaced across the parent experience.
               </p>
             </div>
 
@@ -815,8 +1089,7 @@ I was asked to “increase parent engagement” — but the harder challenge was
                 3. Product Impact
               </div>
               <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                The system prioritized learning progress, early struggle detection,
-                and re-engagement rather than passive activity reporting.
+              The work didn’t stop at the dashboard. A key part of the design was defining how learning signals should be detected, prioritized, and surfaced across the parent experience.
               </p>
             </div>
           </div>
@@ -829,8 +1102,7 @@ I was asked to “increase parent engagement” — but the harder challenge was
               Impact
             </h2>
             <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
-              Clearer learning insights increased parent confidence and created a
-              stronger reason for parents to return to the product.
+            By shifting the experience from passive reporting to meaningful learning signals, the redesign created a stronger reason for parents to return and a clearer path to product value.
             </p>
           </div>
 
@@ -865,12 +1137,13 @@ I was asked to “increase parent engagement” — but the harder challenge was
 
           <div className="space-y-4 max-w-2xl pt-2">
             <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
-              The biggest product shift was not simply redesigning a dashboard — it
-              was redefining what “useful parent engagement” actually meant.
+            The biggest shift wasn’t visual,it was strategic.
+We moved parent engagement from passive activity checking to meaningful learning understanding.
+
             </p>
 
             <p className="text-base md:text-lg font-medium text-neutral-900 dark:text-neutral-100 leading-relaxed">
-              Better insight design created stronger trust in the learning experience.
+            That reframing helped turn Insights into a stronger trust and retention surface for the business.
             </p>
           </div>
         </section>
