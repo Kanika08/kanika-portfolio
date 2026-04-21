@@ -377,7 +377,7 @@ I led the redesign of the Insights experience to translate gameplay data into cl
       Existing Experience
     </p>
 
-    <h2 className="text-2xl md:text-4xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100 leading-tight max-w-4xl">
+    <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100 leading-tight max-w-4xl">
       The Existing Experience Raised the Wrong Questions
     </h2>
 
@@ -397,8 +397,10 @@ I led the redesign of the Insights experience to translate gameplay data into cl
       surfaced, but whether parents could interpret what it actually meant.
     </p>
 
+
+
     <div className="border-l-4 border-[#44E0C4] pl-5 py-1 max-w-2xl">
-      <p className="text-lg md:text-xl font-medium tracking-tight text-neutral-900 dark:text-neutral-100 leading-relaxed">
+      <p className="text-medium md:text-lg font-medium tracking-tight text-neutral-900 dark:text-neutral-100 leading-relaxed">
         The question wasn’t whether data existed — it was whether it created understanding.
       </p>
     </div>
@@ -544,7 +546,7 @@ what kind of experience would actually create more parent value? There were two 
       Research Insight
     </p>
 
-    <h2 className="text-2xl md:text-4xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100 leading-tight">
+    <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100 leading-tight">
       Parents didn’t need more data — they needed clearer meaning.
     </h2>
 

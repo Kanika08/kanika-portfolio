@@ -65,7 +65,7 @@ const caseStudies = [
     product: "Prodigy",
     title: "Parent Insights Dashboard",
     summary:
-      "Turned an ambiguous “increase engagement” ask into a product strategy focus on trust. Redesigned the Parent Insights experience to make learning progress visible by helping parents understand, trust and return. Increased app engagement by 2.56% and drove a 34% lift in retention.",
+      "Turned an ambiguous “increase engagement” ask into a product strategy focus on trust. Increased app engagement by 2.56% and drove a 34% lift in retention.",
     tags: ["Product strategy", "Mobile app design", "Retention"],
     readTime: "8 min read",
     image: "/images/cover_parent_insights.png", 
