@@ -64,11 +64,7 @@ export default function ParentInsightsCaseStudy() {
           </h1>
 
           <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
-          Prodigy’s Parent App Insights experience was designed to show learning — but in practice, it mostly showed activity.
-
-I was asked to increase parent engagement. Instead, I reframed the problem: helping parents understand whether learning was actually happening.
-
-I led the redesign of the Insights experience to translate gameplay data into clear signals of progress and struggle — building trust and giving parents a reason to return.
+          The Insights feature in Prodigy's Parent App was intended to communicate learning progress, but it largely reflected activity metrics instead. When tasked with increasing parent engagement, I pushed past the surface ask and redefined the problem: parents needed to understand whether real learning was taking place. I led the redesign of the Insights experience to transform gameplay data into clear, actionable indicators of where children were thriving and where they needed support, ultimately earning parent trust and sustained return visits.
           </p>
 
           <dl className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pt-6 text-sm">
@@ -127,7 +123,7 @@ I led the redesign of the Insights experience to translate gameplay data into cl
 
     <p className="text-base md:text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
       The Parent App’s Insights experience was supposed to make learning visible.
-      Instead, it mostly surfaced activity — leaving parents with data, but not much confidence.
+      Instead, it mostly surfaced activity, leaving parents with data, but not much confidence.
     </p>
 
     <p className="text-base md:text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
@@ -155,7 +151,7 @@ I led the redesign of the Insights experience to translate gameplay data into cl
       </p>
 
       <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
-        That made Insights more than a reporting surface — it was a trust and
+        That made Insights more than a reporting surface, it was a trust and
         retention driver.
       </p>
     </div>
@@ -235,7 +231,7 @@ I led the redesign of the Insights experience to translate gameplay data into cl
 
     <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
     The initial ask was to “increase parent engagement.”
-    But engagement meant different things across the organization — more usage, more interaction, higher retention.
+    But engagement meant different things across the organization, more usage, more interaction, higher retention.
     </p>
 
     <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
@@ -294,7 +290,7 @@ I led the redesign of the Insights experience to translate gameplay data into cl
     </h2>
 
     <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
-    I led this work as the product designer for the Parent Insights experience — but the core challenge wasn’t just designing a better dashboard. The bigger challenge was defining what engagement should actually mean for this surface, aligning the team around it, and translating that into a clearer product direction.
+    I led this work as the product designer for the Parent Insights experience but the core challenge wasn’t just designing a better dashboard. The bigger challenge was defining what engagement should actually mean for this surface, aligning the team around it, and translating that into a clearer product direction.
     </p>
 
     <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
@@ -364,7 +360,7 @@ I led the redesign of the Insights experience to translate gameplay data into cl
   <div className="max-w-2xl">
     <div className="border-l-4 border-[#44E0C4] pl-5 py-1">
       <p className="text-base md:text-lg font-medium tracking-tight text-neutral-900 dark:text-neutral-100 leading-relaxed">
-      Engagement wasn’t about time spent — it was about making progress feel visible.
+      Engagement wasn’t about time spent, it was about making progress feel visible.
       </p>
     </div>
   </div>
@@ -387,7 +383,7 @@ I led the redesign of the Insights experience to translate gameplay data into cl
     </p>
 
     <p className="text-base md:text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-3xl">
-      At a glance, it looked information-rich — surfacing metrics like questions
+      At a glance, it looked information-rich,surfacing metrics like questions
       answered, time played, and success rate. But those signals seemed more useful
       for reporting activity than helping parents understand learning.
     </p>
@@ -401,7 +397,7 @@ I led the redesign of the Insights experience to translate gameplay data into cl
 
     <div className="border-l-4 border-[#44E0C4] pl-5 py-1 max-w-2xl">
       <p className="text-medium md:text-lg font-medium tracking-tight text-neutral-900 dark:text-neutral-100 leading-relaxed">
-        The question wasn’t whether data existed — it was whether it created understanding.
+        The question wasn’t whether data existed, it was whether it created understanding.
       </p>
     </div>
   </div>
@@ -415,7 +411,7 @@ I led the redesign of the Insights experience to translate gameplay data into cl
             </h2>
             <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
             If interpretation was the core issue, the next question became:
-what kind of experience would actually create more parent value? There were two plausible directions — and each would likely increase engagement, but for very different reasons.
+what kind of experience would actually create more parent value? There were two plausible directions, and each would likely increase engagement, but for very different reasons.
             </p>
           </div>
 
@@ -463,17 +459,17 @@ what kind of experience would actually create more parent value? There were two 
           </div>
 
           <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-3xl">
-  Both directions could increase interaction — but only one was likely to build trust and repeat use.
+  Both directions could increase interaction but only one was likely to build trust and repeat use.
 </p>
  {/* Strategic question */}
  <div className="max-w-3xl">
     <div className="border-l-4 border-[#44E0C4] pl-5 py-1 space-y-2">
       <p className="text-base md:text-lg font-medium tracking-tight text-neutral-900 dark:text-neutral-100 leading-relaxed">
-        Do parents return for more data — or for clearer meaning?
+        Do parents return for more data or for clearer meaning?
       </p>
 
       <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
-      This wasn’t just a design question — it was a strategic product decision. I used research and an audit of the existing experience to determine which direction would create real parent value.
+      This wasn’t just a design question, it was a strategic product decision. I used research and an audit of the existing experience to determine which direction would create real parent value.
       </p>
     </div>
   </div>
@@ -547,7 +543,7 @@ what kind of experience would actually create more parent value? There were two 
     </p>
 
     <h2 className="text-xl md:text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100 leading-tight">
-      Parents didn’t need more data — they needed clearer meaning.
+      Parents didn’t need more data, they needed clearer meaning.
     </h2>
 
     <p className="text-base md:text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-3xl">
@@ -556,7 +552,7 @@ what kind of experience would actually create more parent value? There were two 
     </p>
 
     <p className="text-base md:text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-3xl">
-      Parents were already being shown learning data — but not in a way that helped
+      Parents were already being shown learning data but not in a way that helped
       them quickly understand progress, identify struggle, or know what mattered.
     </p>
   </div>
@@ -621,7 +617,7 @@ what kind of experience would actually create more parent value? There were two 
   <div className="max-w-3xl pt-4">
     <div className="border-l-4 border-[#44E0C4] pl-5 py-1">
       <p className="text-base md:text-lg font-medium tracking-tight text-neutral-900 dark:text-neutral-100 leading-relaxed">
-        Parents weren’t looking for a dashboard to analyze — they were looking for proof that learning was happening.
+        Parents weren’t looking for a dashboard to analyze data they were looking for proof that learning was happening.
       </p>
     </div>
   </div>
@@ -685,7 +681,7 @@ The challenge was designing an experience that could support both without becomi
     </p>
 
     <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
-      Math progress wasn’t a single score. It lived across multiple layers —
+      Math progress wasn’t a single score. It lived across multiple layers
       from curriculum strands, to topics, to individual skills. That meant
       performance data only became useful when grounded in the right learning
       context.
@@ -833,7 +829,7 @@ The challenge was designing an experience that could support both without becomi
   <div className="max-w-2xl">
     <div className="border-l-4 border-[#44E0C4] pl-5 py-1">
       <p className="text-base md:text-lg font-medium tracking-tight text-neutral-900 dark:text-neutral-100 leading-relaxed">
-        The design challenge wasn’t just surfacing data — it was making the learning model legible to parents.
+        The design challenge wasn’t just surfacing data, it was making the learning model legible to parents.
       </p>
     </div>
   </div>

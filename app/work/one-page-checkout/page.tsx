@@ -729,7 +729,7 @@ export default function OnePageCheckoutCaseStudy() {
   </h3>
   <p className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
     A high-fidelity prototype demonstrating a streamlined checkout that reduces steps while
-    preserving decision clarity — reinforcing tier benefits, pricing context, and value
+    preserving decision clarity, reinforcing tier benefits, pricing context, and value
     at the moment of payment.
   </p>
 
@@ -766,7 +766,7 @@ export default function OnePageCheckoutCaseStudy() {
     </h2>
     <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
       The membership card evolved from a feature-heavy explanation to a structured
-      decision surface — reducing cognitive load while reinforcing pricing clarity
+      decision surface, reducing cognitive load while reinforcing pricing clarity
       and plan value at checkout.
     </p>
   </div>
@@ -885,7 +885,7 @@ export default function OnePageCheckoutCaseStudy() {
 
   <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
     V1 accelerated progression but reduced clarity around pricing and value.
-    Users moved faster, yet felt less certain — and conversion declined.
+    Users moved faster, yet felt less certain, and conversion declined.
   </p>
 
   <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed">
